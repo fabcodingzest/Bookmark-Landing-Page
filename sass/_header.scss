@@ -1,0 +1,48 @@
+.header{
+    margin: 3rem;
+
+    &__logo{
+        width: 14.5rem;
+        height: auto;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navbar{
+        margin: 2rem;
+        height: 2rem;
+
+        &--menu{
+            display: inline-block;
+            background-color: #000;
+            width: 20px;
+            height: 3px;
+            position: relative;
+            
+    
+            &:before{
+                display: block;
+                content: '';
+                position: absolute;
+                background-color: #000;
+                width: 20px;
+                height: 3px; 
+                top: -6px;
+            }
+    
+            &:after{
+                display: block;
+                content: '';
+                position: absolute;
+                background-color: #000;
+                width: 20px;
+                height: 3px;       
+                top: 6px;
+            }
+        }
+    }
+}
