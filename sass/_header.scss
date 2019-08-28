@@ -45,4 +45,67 @@
             }
         }
     }
+
+    &__grid{
+        margin: 0;
+        display: grid;
+        grid-template-rows: 38rem max-content;
+
+        &--1{
+            position: relative;
+        }
+        &--bg{
+            display: block;
+            background: hsl(231, 69%, 60%);
+            height: 18rem;
+            width: 30rem;
+            border-top-left-radius: 15rem;
+            border-bottom-left-radius: 15rem;
+            position: absolute;
+            top: 14rem;
+            right: -3rem;
+            z-index: 1;
+        }
+
+        &--illustration{
+            width: 33rem;
+            margin: 0;
+            margin-top: 8rem;
+            position: absolute;
+            right: -1rem;
+            z-index: 10;
+            
+            
+        }
+
+        &--2{
+            margin: 1.2rem;
+            text-align: center;
+            h2{
+                font-size: 3rem;
+                font-weight: 500;
+            }
+            &p {
+                margin-top: 2.5rem;
+                font-size: 1.4rem;
+                color: hsl(229, 8%, 60%);
+            }
+        }
+
+        &--button{
+            border: none;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            border-radius: .5rem;
+            background-color: rgb(240, 240, 240);
+            margin-right: .8rem;
+            font-weight: 400;
+            font-family: 'Rubik', sans-serif;
+            
+            &chrome{
+                color: white;
+                background-color: hsl(231, 69%, 60%);
+            }
+        }
+    }
 }

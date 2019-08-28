@@ -6,12 +6,12 @@
   box-sizing: border-box; }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%; }
 
 body {
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: 1.8rem;
+  font-family: 'Rubik', sans-serif; }
 
 .header {
   margin: 3rem; }
@@ -47,3 +47,49 @@ body {
         width: 20px;
         height: 3px;
         top: 6px; }
+  .header__grid {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 38rem max-content; }
+    .header__grid--1 {
+      position: relative; }
+    .header__grid--bg {
+      display: block;
+      background: #5368df;
+      height: 18rem;
+      width: 30rem;
+      border-top-left-radius: 15rem;
+      border-bottom-left-radius: 15rem;
+      position: absolute;
+      top: 14rem;
+      right: -3rem;
+      z-index: 1; }
+    .header__grid--illustration {
+      width: 33rem;
+      margin: 0;
+      margin-top: 8rem;
+      position: absolute;
+      right: -1rem;
+      z-index: 10; }
+    .header__grid--2 {
+      margin: 1.2rem;
+      text-align: center; }
+      .header__grid--2 h2 {
+        font-size: 3rem;
+        font-weight: 500; }
+      .header__grid--2p {
+        margin-top: 2.5rem;
+        font-size: 1.4rem;
+        color: #9194a1; }
+    .header__grid--button {
+      border: none;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      border-radius: .5rem;
+      background-color: #f0f0f0;
+      margin-right: .8rem;
+      font-weight: 400;
+      font-family: 'Rubik', sans-serif; }
+      .header__grid--buttonchrome {
+        color: white;
+        background-color: #5368df; }
