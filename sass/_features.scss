@@ -54,4 +54,14 @@
             z-index: 10;
         }
     }
+
+    &__red{
+        display: inline-block;
+        background-color: red;
+        height: .4rem;
+        width: 14rem;
+        position: absolute;
+        top: 5.1rem;
+        left: 30%;
+    }
 }

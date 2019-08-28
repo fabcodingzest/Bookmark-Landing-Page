@@ -146,6 +146,14 @@ p {
       top: 6rem;
       left: 1.2rem;
       z-index: 10; }
+  .features__red {
+    display: inline-block;
+    background-color: red;
+    height: .4rem;
+    width: 14rem;
+    position: absolute;
+    top: 5.1rem;
+    left: 30%; }
 
 .download {
   margin: 3rem;
@@ -272,3 +280,11 @@ p {
       grid-template-columns: repeat(2, 6rem);
       align-items: center;
       justify-items: center; }
+  .footer p {
+    color: #fff;
+    font-size: 1.2rem; }
+  .footer a,
+  .footer a:link,
+  .footer a:visited {
+    color: #ff8e8e;
+    text-decoration: none; }

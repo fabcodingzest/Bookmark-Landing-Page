@@ -31,4 +31,16 @@
             justify-items: center;
         }
     }
+
+    p{
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    a,
+    a:link,
+    a:visited{
+        color: rgb(255, 142, 142);
+        text-decoration: none;
+    }
 }
