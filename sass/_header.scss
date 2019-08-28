@@ -54,17 +54,18 @@
         &--1{
             position: relative;
         }
+        
         &--bg{
-            display: block;
-            background: hsl(231, 69%, 60%);
-            height: 18rem;
-            width: 30rem;
-            border-top-left-radius: 15rem;
-            border-bottom-left-radius: 15rem;
-            position: absolute;
-            top: 14rem;
-            right: -3rem;
-            z-index: 1;
+                display: block;
+                background: hsl(231, 69%, 60%);
+                height: 18rem;
+                width: 30rem;
+                border-top-left-radius: 15rem;
+                border-bottom-left-radius: 15rem;
+                position: absolute;
+                top: 14rem;
+                right: -3rem;
+                z-index: 1;
         }
 
         &--illustration{
@@ -81,26 +82,19 @@
         &--2{
             margin: 1.2rem;
             text-align: center;
-            h2{
-                font-size: 3rem;
-                font-weight: 500;
-            }
-            &p {
-                margin-top: 2.5rem;
-                font-size: 1.4rem;
-                color: hsl(229, 8%, 60%);
-            }
         }
 
         &--button{
             border: none;
             margin-top: 3rem;
-            padding: 1.5rem;
+            padding: 1.4rem;
             border-radius: .5rem;
             background-color: rgb(240, 240, 240);
-            margin-right: .8rem;
-            font-weight: 400;
+            margin-right: .9rem;
+            font-weight: 500;
             font-family: 'Rubik', sans-serif;
+            box-shadow: 0 .3rem .8rem rgb(182, 182, 182);
+            color: hsl(220, 2%, 34%);
             
             &chrome{
                 color: white;

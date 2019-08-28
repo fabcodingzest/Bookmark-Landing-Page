@@ -1,0 +1,57 @@
+.features{
+    margin: 12rem 3rem;
+    text-align: center;
+    
+    &__box{
+        margin-bottom: 4rem;
+    }
+    
+    &__button{
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        padding: 1.6rem 5rem;
+        border-bottom: .1rem solid rgb(201, 201, 201);
+        font-size: 1.8rem;
+        position: relative;
+
+        &:first-of-type{
+            border-top: .1rem solid rgb(201, 201, 201);
+        }
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-rows: 35rem max-content;
+    }
+
+    &__illustration{
+        position: relative;
+        margin-bottom: 10rem;
+
+        &--bg{
+            display: block;
+            background: hsl(231, 69%, 60%);
+            height: 20rem;
+            width: 30rem;
+            border-top-right-radius: 15rem;
+            border-bottom-right-radius: 15rem;
+            position: absolute;
+            left: -4.4rem;
+            top:  10rem;
+            z-index: 1;
+            
+        }
+
+        &--img{
+            width: 31rem;
+            height: 20rem;
+            margin: 0;
+            margin-top: 0rem;
+            position: absolute;
+            top: 6rem;
+            left: 1.2rem;
+            z-index: 10;
+        }
+    }
+}

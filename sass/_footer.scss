@@ -1,0 +1,34 @@
+.footer{
+    padding: 1.6rem 3rem;
+    background-color: hsl(229, 31%, 21%);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+
+        svg,
+        h5,
+        div{
+            margin: 1.5rem;
+        }
+        
+        svg path{
+            fill: #fff;
+        }
+
+        &--social{
+            display: grid;
+            grid-template-columns: repeat(2,6rem);
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}

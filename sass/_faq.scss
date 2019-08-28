@@ -1,0 +1,36 @@
+.faq{
+    margin: 3rem;
+    &__head{
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    &__ques{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--sec{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid rgb(214, 214, 214);
+        }
+
+        &--btn{
+            border: none;
+            margin-top: 3rem;
+            padding: 1.6rem 3rem;
+            border-radius: .5rem;
+            background-color: hsl(231, 69%, 60%);
+            margin-right: .9rem;
+            font-weight: 500;
+            font-family: 'Rubik', sans-serif;
+            box-shadow: 0 .3rem .8rem rgb(182, 182, 182);
+            color: #fff;
+            align-self: center;
+        }
+    }
+
+}

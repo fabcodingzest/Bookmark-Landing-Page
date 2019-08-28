@@ -1,0 +1,50 @@
+.download{
+    margin: 3rem;
+    margin-bottom: 12rem;
+
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__head{
+        text-align: center;
+    }
+    &__card{
+        margin-top: 4.5rem;
+        width: 28rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 1.4rem;
+        box-shadow: 0 .5rem 1.4rem rgb(230, 230, 230);
+
+        &--dots{
+            margin-top: 4rem;
+        }
+
+        &--img{
+            margin-bottom: 4rem;
+            margin-top: 4rem;
+        }
+
+        &--btn{
+            border: none;
+            margin-top: 3rem;
+            padding: 1.6rem 3.5rem;
+            border-radius: .5rem;
+            background-color: hsl(231, 69%, 60%);
+            margin-right: .9rem;
+            font-weight: 500;
+            font-size: 1.4rem;
+            font-family: 'Rubik', sans-serif;
+            box-shadow: 0 .3rem .8rem rgb(182, 182, 182);
+            color: #fff;
+        }
+    }
+}
