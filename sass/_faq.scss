@@ -22,6 +22,11 @@
             align-items: center;
             padding: 2rem 0;
             border-bottom: 1px solid rgb(214, 214, 214);
+            cursor: pointer;
+
+            &:hover{
+                color: #ff6161;
+            }
         }
 
         &--btn{
@@ -37,6 +42,14 @@
             color: #fff;
             align-self: center;
             cursor: pointer;
+
+            &:hover,
+            &:active{
+                background-color: #fff;
+                border: .2rem solid #5267df;
+                border-radius: .5rem;
+                color: #5267df;
+        }
         }
     }
 

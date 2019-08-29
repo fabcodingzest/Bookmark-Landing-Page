@@ -57,7 +57,15 @@
             box-shadow: 0 .3rem .8rem rgb(182, 182, 182);
             color: #fff;
             cursor: pointer;
+
+            &:hover,
+            &:active{
+                background-color: #fff;
+                border: .2rem solid #5267df;
+                border-radius: .5rem;
+                color: #5267df;
         }
+    }
 
 
         &--1{

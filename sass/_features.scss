@@ -40,6 +40,11 @@
         font-size: 1.8rem;
         position: relative;
         cursor: pointer;
+        outline: none;
+
+        &:hover{
+            color: #ff6161;
+        }
 
         &:first-of-type{
             border-top: .1rem solid rgb(201, 201, 201);

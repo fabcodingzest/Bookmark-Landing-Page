@@ -1,6 +1,10 @@
 .header{
     margin: 3rem;
 
+    a:hover{
+        color: #ff6161;
+    }
+
     &__logo{
         width: 14.5rem;
         height: auto;
@@ -23,8 +27,9 @@
                 justify-content: center;
                 align-items: center;
                 margin-right: 5rem;
+
+                
             }
-            
         }
 
         &--content a, &--content a:link, &--content a:visited{
@@ -34,6 +39,9 @@
                 color: black;
                 margin-right: 5rem;
                 
+                &:hover{
+                    color: #ff6161;
+                }
             }
         }
     }
@@ -49,6 +57,15 @@
         font-weight: 500;
         margin: 2rem 0 ;
         cursor: pointer;
+
+        &:hover,
+        &:active{
+            background-color: #fff;
+            border: .4rem solid #ff6161;
+            border-radius: .6rem;
+            color: #ff6161;
+        }
+
     }
 
     &__menu{
@@ -167,10 +184,26 @@
             box-shadow: 0 .3rem .8rem rgb(182, 182, 182);
             color: hsl(220, 2%, 34%);
             cursor: pointer;
+
+            &:hover,
+            &:active{
+                background-color: #fff;
+                border: .2rem solid rgb(156, 155, 155);
+                border-radius: .6rem;
+                color: grey;
+            }
             
             &chrome{
                 color: white;
                 background-color: #5267df;
+
+                &:hover,
+                &:active{
+                background-color: #fff;
+                border: .2rem solid #5267df;
+                border-radius: .6rem;
+                color: #5267df;
+            }
             }
         }
     }

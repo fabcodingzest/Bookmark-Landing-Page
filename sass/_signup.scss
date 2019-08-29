@@ -36,13 +36,21 @@
             padding: 1.6rem 10rem;
             border-radius: .6rem;
             border: none;
-            background-color: rgb(255, 97, 97);
+            background-color: #ff6161;
             width: 100%;
             color: #fff;
             font-size: 1.6rem;
             font-weight: 500;
             margin: 2rem 0 ;
             cursor: pointer;
+
+            &:hover,
+            &:active{
+                background-color: #fff;
+                border: .2rem solid #ff6161;
+                border-radius: .6rem;
+                color: #ff6161;
+            }
 
             @media only screen and (min-width: $bp-large) {
                 padding: 1.6rem;
