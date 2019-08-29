@@ -35,6 +35,9 @@ p {
     p {
       font-size: 2rem; } }
 
+.container {
+  margin: 6rem 10rem; }
+
 .header {
   margin: 3rem; }
   .header__logo {
@@ -55,7 +58,8 @@ p {
       .header__grid {
         grid-template-columns: repeat(2, 1fr);
         text-align: start;
-        align-items: center; } }
+        align-items: center;
+        margin: 10rem 0; } }
     .header__grid--1 {
       position: relative; }
     .header__grid--bg {
@@ -71,10 +75,10 @@ p {
       z-index: 1; }
       @media only screen and (min-width: 50em) {
         .header__grid--bg {
-          top: -3rem;
-          right: -20rem;
+          top: -10rem;
+          right: -13rem;
           width: 50rem;
-          height: 25rem; } }
+          height: 35rem; } }
     .header__grid--illustration {
       width: 33rem;
       margin: 0;
@@ -84,9 +88,9 @@ p {
       z-index: 10; }
       @media only screen and (min-width: 50em) {
         .header__grid--illustration {
-          width: 52rem;
-          right: -12rem;
-          top: -24rem; } }
+          width: 62rem;
+          left: 10rem;
+          top: -28rem; } }
     .header__grid--2 {
       margin: 1.2rem;
       text-align: center; }
@@ -111,7 +115,7 @@ p {
 
 .features {
   margin: 12rem 3rem;
-  text-align: center; }
+  text-align: start; }
   @media only screen and (min-width: 50em) {
     .features {
       display: flex;
@@ -119,6 +123,15 @@ p {
       justify-content: center; } }
   .features__box {
     margin-bottom: 4rem; }
+    @media only screen and (min-width: 50em) {
+      .features__box {
+        text-align: center; } }
+  @media only screen and (min-width: 50em) {
+    .features__type {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+      margin-left: 15%; } }
   .features__button {
     border: none;
     background-color: transparent;
@@ -129,12 +142,17 @@ p {
     position: relative; }
     .features__button:first-of-type {
       border-top: 0.1rem solid #c9c9c9; }
+      @media only screen and (min-width: 50em) {
+        .features__button:first-of-type {
+          border-top: none; } }
   .features__grid {
     display: grid;
     grid-template-rows: 35rem max-content; }
     @media only screen and (min-width: 50em) {
       .features__grid {
-        grid-template-columns: repeat(2, 1fr); } }
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: 2rem 0; } }
   .features__illustration {
     position: relative;
     margin-bottom: 10rem; }
@@ -149,6 +167,12 @@ p {
       left: -4.4rem;
       top: 10rem;
       z-index: 1; }
+      @media only screen and (min-width: 50em) {
+        .features__illustration--bg {
+          width: 62rem;
+          height: 30rem;
+          top: 1rem;
+          left: -14rem; } }
     .features__illustration--img {
       width: 31rem;
       height: 20rem;
@@ -158,6 +182,12 @@ p {
       top: 6rem;
       left: 1.2rem;
       z-index: 10; }
+      @media only screen and (min-width: 50em) {
+        .features__illustration--img {
+          width: 48rem;
+          height: auto;
+          top: -8rem;
+          left: 4rem; } }
   .features__red {
     display: inline-block;
     background-color: red;
@@ -166,9 +196,12 @@ p {
     position: absolute;
     top: 5.1rem;
     left: 30%; }
+    @media only screen and (min-width: 50em) {
+      .features__red {
+        left: 25%; } }
   @media only screen and (min-width: 50em) {
     .features__center {
-      padding: 0 30rem; } }
+      padding: 0 34rem; } }
 
 .download {
   margin: 3rem;
@@ -178,6 +211,10 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media only screen and (min-width: 50em) {
+      .download__grid {
+        flex-direction: row;
+        margin: 8rem 0; } }
   .download__head {
     text-align: center; }
   .download__card {
@@ -191,6 +228,9 @@ p {
     align-items: center;
     border-radius: 1.4rem;
     box-shadow: 0 0.5rem 1.4rem #e6e6e6; }
+    @media only screen and (min-width: 50em) {
+      .download__card {
+        margin-right: 4rem; } }
     .download__card--dots {
       margin-top: 4rem; }
     .download__card--img {
@@ -208,6 +248,12 @@ p {
       font-family: 'Rubik', sans-serif;
       box-shadow: 0 0.3rem 0.8rem #b6b6b6;
       color: #fff; }
+    .download__card--1 {
+      transform: translateY(-5rem); }
+    .download__card--3 {
+      transform: translateY(5rem); }
+  .download__p {
+    padding: 0 40rem; }
 
 .faq {
   margin: 3rem; }
@@ -242,7 +288,7 @@ p {
       color: #fff;
       align-self: center; }
   .faq__p {
-    padding: 0 45rem; }
+    padding: 0 34rem; }
 
 .signup {
   padding: 3rem;

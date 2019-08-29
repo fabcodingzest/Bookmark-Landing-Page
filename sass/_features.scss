@@ -1,6 +1,6 @@
 .features{
     margin: 12rem 3rem;
-    text-align: center;
+    text-align: start;
 
     @media only screen and (min-width: $bp-large) {
         display: flex;
@@ -11,8 +11,21 @@
     
     &__box{
         margin-bottom: 4rem;
+
+        @media only screen and (min-width: $bp-large) {
+            text-align: center;
+        }
+
     }
     
+    &__type{
+        @media only screen and (min-width: $bp-large) {
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
     &__button{
         border: none;
         background-color: transparent;
@@ -24,6 +37,10 @@
 
         &:first-of-type{
             border-top: .1rem solid rgb(201, 201, 201);
+
+            @media only screen and (min-width: $bp-large) {
+                border-top: none;
+            }
         }
     }
 
@@ -33,6 +50,8 @@
 
         @media only screen and (min-width: $bp-large) {
             grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            margin: 2rem 0;
         }
     }
 
@@ -51,7 +70,14 @@
             left: -4.4rem;
             top:  10rem;
             z-index: 1;
+
             
+            @media only screen and (min-width: $bp-large) {
+                width: 62rem;
+                height: 30rem;
+                top: 1rem;
+                left: -14rem;
+            }
         }
 
         &--img{
@@ -63,6 +89,13 @@
             top: 6rem;
             left: 1.2rem;
             z-index: 10;
+
+            @media only screen and (min-width: $bp-large) {
+                width: 48rem;
+                height: auto;
+                top: -8rem;
+                left: 4rem;
+            }
         }
     }
 
@@ -74,12 +107,16 @@
         position: absolute;
         top: 5.1rem;
         left: 30%;
+
+        @media only screen and (min-width: $bp-large) {
+            left: 25%;
+        }
     }
 
     &__center{
 
         @media only screen and (min-width: $bp-large) {
-            padding: 0 30rem;
+            padding: 0 34rem;
         }
     }
 }
