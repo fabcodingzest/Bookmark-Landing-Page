@@ -21,8 +21,18 @@
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mem": "^5.1.1"
+  },
   "keywords": [
     "\u001b[A\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Bgit@github.com:fabrizvi/Bookmark-Landing-Page.git"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabrizvi/Bookmark-Landing-Page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fabrizvi/Bookmark-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/fabrizvi/Bookmark-Landing-Page#readme"
 }

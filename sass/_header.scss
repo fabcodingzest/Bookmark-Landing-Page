@@ -7,57 +7,75 @@
     }
 
     &__nav{
-        display: flex;
+        display: grid;
         justify-content: space-between;
         align-items: center;
     }
 
-    &__navbar{
-        margin: 2rem;
-        height: 2rem;
+    &__menu{
 
-        &--menu{
-            display: inline-block;
-            background-color: #000;
-            width: 20px;
-            height: 3px;
-            position: relative;
-            
-    
-            &:before{
-                display: block;
-                content: '';
-                position: absolute;
-                background-color: #000;
-                width: 20px;
-                height: 3px; 
-                top: -6px;
-            }
-    
-            &:after{
-                display: block;
-                content: '';
-                position: absolute;
-                background-color: #000;
-                width: 20px;
-                height: 3px;       
-                top: 6px;
-            }
+
+        @media only screen and (min-width: $bp-large) {
+            display: none;
         }
     }
+
+    // &__navbar{
+    //     margin: 1rem;
+    //     height: 2rem;
+
+    //     &--menu{
+    //         display: inline-block;
+    //         background-color: #000;
+    //         width: 20px;
+    //         height: 3px;
+    //         position: relative;
+            
+    
+    //         &:before{
+    //             display: block;
+    //             content: '';
+    //             position: absolute;
+    //             background-color: #000;
+    //             width: 20px;
+    //             height: 3px; 
+    //             top: -6px;
+    //         }
+    
+    //         &:after{
+    //             display: block;
+    //             content: '';
+    //             position: absolute;
+    //             background-color: #000;
+    //             width: 20px;
+    //             height: 3px;       
+    //             top: 6px;
+    //         }
+    //     }
+    // }
 
     &__grid{
         margin: 0;
         display: grid;
         grid-template-rows: 38rem max-content;
 
+        @media only screen and (min-width: $bp-large) {
+            grid-template-columns: repeat(2,1fr);
+            text-align: start;
+            align-items: center;
+        }
+
         &--1{
             position: relative;
+
+            @media only screen and (min-width: $bp-large) {
+                //grid-row: 2/2;
+            }
         }
         
         &--bg{
                 display: block;
-                background: hsl(231, 69%, 60%);
+                background: #5267df;
                 height: 18rem;
                 width: 30rem;
                 border-top-left-radius: 15rem;
@@ -66,6 +84,13 @@
                 top: 14rem;
                 right: -3rem;
                 z-index: 1;
+
+                @media only screen and (min-width: $bp-large) {
+                    top: -3rem;
+                    right: -20rem;
+                    width: 50rem;
+                    height: 25rem;
+                }
         }
 
         &--illustration{
@@ -76,12 +101,20 @@
             right: -1rem;
             z-index: 10;
             
-            
+            @media only screen and (min-width: $bp-large) {
+                width: 52rem;
+                right: -12rem;
+                top: -24rem;
+            }
         }
 
         &--2{
             margin: 1.2rem;
             text-align: center;
+            @media only screen and (min-width: $bp-large) {
+                grid-row: 1/2;
+                text-align: start;
+            }
         }
 
         &--button{

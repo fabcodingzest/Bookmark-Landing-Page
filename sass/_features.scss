@@ -1,6 +1,13 @@
 .features{
     margin: 12rem 3rem;
     text-align: center;
+
+    @media only screen and (min-width: $bp-large) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
     
     &__box{
         margin-bottom: 4rem;
@@ -23,6 +30,10 @@
     &__grid{
         display: grid;
         grid-template-rows: 35rem max-content;
+
+        @media only screen and (min-width: $bp-large) {
+            grid-template-columns: repeat(2,1fr);
+        }
     }
 
     &__illustration{
@@ -63,5 +74,12 @@
         position: absolute;
         top: 5.1rem;
         left: 30%;
+    }
+
+    &__center{
+
+        @media only screen and (min-width: $bp-large) {
+            padding: 0 30rem;
+        }
     }
 }
