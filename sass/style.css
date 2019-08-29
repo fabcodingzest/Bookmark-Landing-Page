@@ -39,12 +39,13 @@ p {
     p {
       font-size: 2rem; } }
 
-button {
+.button {
   outline: none; }
-  button:hover {
+  .button:hover,
+  .button span {
     filter: opacity(0.8);
-    box-shadow: 0.3rem 0.4rem 0.8rem #b1b1b1; }
-  button:active {
+    box-shadow: 0.3rem 0.4rem 0.8rem #969696; }
+  .button:active {
     transform: translate(0.1rem, 0.1rem); }
 
 @media only screen and (min-width: 50em) {
@@ -218,12 +219,14 @@ button {
     @media only screen and (min-width: 50em) {
       .features__box {
         text-align: center; } }
-  @media only screen and (min-width: 50em) {
-    .features__type {
-      display: flex;
-      justify-content: center;
-      width: 70%;
-      margin-left: 15%; } }
+  .features__type {
+    list-style: none; }
+    @media only screen and (min-width: 50em) {
+      .features__type {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin-left: 15%; } }
   .features__button {
     border: none;
     background-color: transparent;

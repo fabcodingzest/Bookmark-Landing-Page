@@ -51,12 +51,13 @@ p{
     }
 }
 
-button{
+.button{
     outline: none;
 
-    &:hover{
+    &:hover,
+    & span{
         filter: opacity(.8);
-        box-shadow: .3rem .4rem .8rem rgb(177, 177, 177);
+        box-shadow: .3rem .4rem .8rem rgb(150, 150, 150);
     }
     
     &:active{
