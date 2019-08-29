@@ -37,8 +37,10 @@
         }
 
         div{
-            align-self: flex-end;
-            margin-left: auto;
+            @media only screen and (min-width: $bp-large) {
+                align-self: flex-end;
+                margin-left: auto;
+            }
         }
     }
 
@@ -50,7 +52,13 @@
     a,
     a:link,
     a:visited{
-        color: rgb(255, 142, 142);
+        color: #fff;
         text-decoration: none;
     }
+
+    &__credit a, &__credit a:link , &__credit a:visited {
+        color: rgb(255, 142, 142);
+    }
+
+    
 }

@@ -36,11 +36,14 @@
             box-shadow: 0 .3rem .8rem rgb(182, 182, 182);
             color: #fff;
             align-self: center;
+            cursor: pointer;
         }
     }
 
     &__p{
-        padding: 0 34rem;
+        @media only screen and (min-width: $bp-large) {
+            padding: 0 34rem;
+        }
     }
 
 }

@@ -7,6 +7,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 5rem;
 
 
         @media only screen and (min-width: $bp-large) {
@@ -19,7 +20,7 @@
         text-align: center;
     }
     &__card{
-        margin-top: 4.5rem;
+        margin-top: 3rem;
         width: 28rem;
         padding: 2rem;
         display: flex;
@@ -55,15 +56,21 @@
             font-family: 'Rubik', sans-serif;
             box-shadow: 0 .3rem .8rem rgb(182, 182, 182);
             color: #fff;
+            cursor: pointer;
         }
 
 
         &--1{
-            transform: translateY(-5rem);
+            @media only screen and (min-width: $bp-large) {
+                transform: translateY(-5rem);
+            }
         }
 
         &--3{
-            transform: translateY(5rem);
+
+            @media only screen and (min-width: $bp-large) {
+                transform: translateY(5rem);
+            }
         }
     }
 
