@@ -13,7 +13,7 @@
     &__nav{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        //align-items: center;
 
         @media only screen and (min-width: $bp-large) {
             display: flex;
@@ -76,39 +76,55 @@
         }
     }
 
-    // &__navbar{
-    //     margin: 1rem;
-    //     height: 2rem;
+        &__menu{
+            display: inline-block;
+            background-color: #000;
+            width: 20px;
+            height: 3px;
+            position: relative;
+            z-index: 200000;
 
-    //     &--menu{
-    //         display: inline-block;
-    //         background-color: #000;
-    //         width: 20px;
-    //         height: 3px;
-    //         position: relative;
+            @media only screen and (min-width: $bp-large) {
+                display: none;
+            }
+
+            &:before,
+            &:after{
+                display: block;
+                content: '';
+                position: absolute;
+                background-color: #000;
+                width: 20px;
+                height: 3px;  
+                transition: .5s;
+            }
             
     
-    //         &:before{
-    //             display: block;
-    //             content: '';
-    //             position: absolute;
-    //             background-color: #000;
-    //             width: 20px;
-    //             height: 3px; 
-    //             top: -6px;
-    //         }
+            &:before{
+                top: -5.5px;
+            }
     
-    //         &:after{
-    //             display: block;
-    //             content: '';
-    //             position: absolute;
-    //             background-color: #000;
-    //             width: 20px;
-    //             height: 3px;       
-    //             top: 6px;
-    //         }
-    //     }
-    // }
+            &:after{     
+                top: 5.7px;
+            }
+
+        }
+
+        &__icon.active .header__menu{
+            background:rgba(0,0,0,0);
+            
+        }
+        &__icon.active .header__menu:before{
+            top: 0;
+            transform:rotate(45deg);
+            background-color: #fff;
+        }
+        &__icon.active .header__menu:after{
+            top: 0;
+            transform:rotate(135deg);
+            background-color: #fff;
+        }
+    
 
     &__grid{
         margin: 0;
@@ -131,8 +147,8 @@
         &--bg{
                 display: block;
                 background: #5267df;
-                height: 18%;
-                width: 30%;
+                height: 18rem;
+                width: 30rem;
                 border-top-left-radius: 15rem;
                 border-bottom-left-radius: 15rem;
                 position: absolute;
@@ -208,17 +224,39 @@
         }
     }
 
+    &__navbar{
+        &--nav{
+            display: flex;
+            justify-content: space-between;
+            }
+    }
+
 
     &__mobile{
         background-color: #2b356eda;
         width: 100%;
-        height: 100vh;
+        height: 0%;
         position: fixed;
         top: 0;
         right: 0;
         z-index: 2000;
-        padding: 3rem;
-        display: none;
+        overflow-x: hidden;
+        transition: .5s;
+        opacity: 0;
+        visibility: hidden;
+        //display: none;
+
+        &.open{
+            opacity: 1;
+            visibility: visible;
+            height: 100%;
+        }
+
+        &--nav{
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem;
+        }
         
 
         &--logo{
@@ -243,6 +281,10 @@
         &__last{
             align-self: end;
         }
+    }
+
+    &__li{
+        padding: 3rem;
     }
 
     &__list{

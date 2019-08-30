@@ -54,8 +54,7 @@ button {
     height: auto; }
   .header__nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    justify-content: space-between; }
     @media only screen and (min-width: 50em) {
       .header__nav {
         display: flex; } }
@@ -93,6 +92,38 @@ button {
   @media only screen and (min-width: 50em) {
     .header__menu {
       display: none; } }
+  .header__menu {
+    display: inline-block;
+    background-color: #000;
+    width: 20px;
+    height: 3px;
+    position: relative;
+    z-index: 200000; }
+    @media only screen and (min-width: 50em) {
+      .header__menu {
+        display: none; } }
+    .header__menu:before, .header__menu:after {
+      display: block;
+      content: '';
+      position: absolute;
+      background-color: #000;
+      width: 20px;
+      height: 3px;
+      transition: .5s; }
+    .header__menu:before {
+      top: -5.5px; }
+    .header__menu:after {
+      top: 5.7px; }
+  .header__icon.active .header__menu {
+    background: rgba(0, 0, 0, 0); }
+  .header__icon.active .header__menu:before {
+    top: 0;
+    transform: rotate(45deg);
+    background-color: #fff; }
+  .header__icon.active .header__menu:after {
+    top: 0;
+    transform: rotate(135deg);
+    background-color: #fff; }
   .header__grid {
     margin: 0;
     display: grid;
@@ -108,8 +139,8 @@ button {
     .header__grid--bg {
       display: block;
       background: #5267df;
-      height: 18%;
-      width: 30%;
+      height: 18rem;
+      width: 30rem;
       border-top-left-radius: 15rem;
       border-bottom-left-radius: 15rem;
       position: absolute;
@@ -166,16 +197,29 @@ button {
           border: .2rem solid #5267df;
           border-radius: .6rem;
           color: #5267df; }
+  .header__navbar--nav {
+    display: flex;
+    justify-content: space-between; }
   .header__mobile {
     background-color: #2b356eda;
     width: 100%;
-    height: 100vh;
+    height: 0%;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 2000;
-    padding: 3rem;
-    display: none; }
+    overflow-x: hidden;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden; }
+    .header__mobile.open {
+      opacity: 1;
+      visibility: visible;
+      height: 100%; }
+    .header__mobile--nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem; }
     .header__mobile--logo {
       width: 14.5rem; }
       .header__mobile--logo svg path {
@@ -190,6 +234,8 @@ button {
       font-size: 2rem; }
     .header__mobile__last {
       align-self: end; }
+  .header__li {
+    padding: 3rem; }
   .header__list {
     position: absolute;
     top: 50%;
