@@ -5,6 +5,16 @@
         margin-bottom: 6rem;
     }
 
+
+    &__arrow{
+        transform: rotate(180deg);
+
+        svg path{
+            stroke: #ff6161;
+        }
+        
+    }
+
     &__ques{
         display: flex;
         flex-direction: column;
@@ -14,6 +24,24 @@
             justify-content: center;
             width: 40%;
             margin-left: 30%;
+        }
+
+        &--ans{
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        &--para{
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &--open{
+            display: inline;
+            visibility: visible;
+            opacity: 1;
         }
 
         &--sec{

@@ -27,8 +27,9 @@
         @media only screen and (min-width: $bp-large) {
             display: flex;
             justify-content: center;
-            width: 70%;
-            margin-left: 15%;
+            width: 80%;
+            margin-left: 10%;
+            text-align: center;
         }
     }
     &__button{
@@ -58,11 +59,13 @@
     &__grid{
         display: grid;
         grid-template-rows: 35rem max-content;
+        transition: .5s ease;
 
         @media only screen and (min-width: $bp-large) {
             grid-template-columns: repeat(2,1fr);
             align-items: center;
             margin: 2rem 0;
+            grid-gap: 5rem;
         }
     }
 
@@ -119,6 +122,11 @@
         position: absolute;
         top: 5.1rem;
         left: 30%;
+
+        @media only screen and (min-width: $bp-large) {
+            width: 100%;
+            left: 0;
+        }
     }
 
     &__center{

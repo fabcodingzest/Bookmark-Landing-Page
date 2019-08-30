@@ -22,22 +22,16 @@
         padding: 1.6rem;
         border-radius: .6rem;
         border: none;
+
         @media only screen and (min-width: $bp-large) {
-            max-width: 35rem;;
+            max-width: 35rem;
         }
         
-        &::placeholder{
-            color: hsl(0, 0%, 82%);
-            font-weight: 500;
-            font-size: 1.6rem;
-        }
-
         &--btn{
             padding: 1.6rem 10rem;
             border-radius: .6rem;
             border: none;
             background-color: #ff6161;
-            width: 100%;
             color: #fff;
             font-size: 1.6rem;
             font-weight: 500;
@@ -61,6 +55,7 @@
     }
 
     &__form{
+        position: relative;
 
         @media only screen and (min-width: $bp-large) {
             display: flex;
@@ -69,4 +64,42 @@
             
         }
     }
+
+
+    &__req:before{
+        content: 'This does not look like an email';
+        display: block;
+        height: inherit;
+        max-width: 35rem;;
+        background-color: red;
+        position: absolute;
+        text-align: center;
+        padding: .2rem 3.1rem;
+        border-bottom-left-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+
+    }
+
+
+    &__email{
+        border: 2px solid red;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-image: url(/images/icon-error.svg);
+        background-position: 95% center;
+        background-repeat: no-repeat;
+        
+    }
+
+    &__input--ph{
+
+        &::placeholder{
+            color: grey;
+        }
+
+        &.signup__email::placeholder{
+            color: #ff6161;
+        }
+    }
 }
+

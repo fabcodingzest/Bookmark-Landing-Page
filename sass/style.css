@@ -36,7 +36,7 @@ p {
   transition: all .2s ease-out; }
   @media only screen and (min-width: 50em) {
     p {
-      font-size: 2rem; } }
+      font-size: 1.4rem; } }
 
 button {
   outline: none; }
@@ -283,8 +283,9 @@ button {
       .features__type {
         display: flex;
         justify-content: center;
-        width: 70%;
-        margin-left: 15%; } }
+        width: 80%;
+        margin-left: 10%;
+        text-align: center; } }
   .features__button {
     border: none;
     background-color: transparent;
@@ -304,12 +305,14 @@ button {
           border-top: none; } }
   .features__grid {
     display: grid;
-    grid-template-rows: 35rem max-content; }
+    grid-template-rows: 35rem max-content;
+    transition: .5s ease; }
     @media only screen and (min-width: 50em) {
       .features__grid {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        margin: 2rem 0; } }
+        margin: 2rem 0;
+        grid-gap: 5rem; } }
   .features__illustration {
     position: relative;
     margin-bottom: 10rem; }
@@ -354,6 +357,10 @@ button {
     position: absolute;
     top: 5.1rem;
     left: 30%; }
+    @media only screen and (min-width: 50em) {
+      .features__red {
+        width: 100%;
+        left: 0; } }
   @media only screen and (min-width: 50em) {
     .features__center {
       padding: 0 34rem; } }
@@ -424,6 +431,10 @@ button {
   .faq__head {
     text-align: center;
     margin-bottom: 6rem; }
+  .faq__arrow {
+    transform: rotate(180deg); }
+    .faq__arrow svg path {
+      stroke: #ff6161; }
   .faq__ques {
     display: flex;
     flex-direction: column;
@@ -433,6 +444,17 @@ button {
         justify-content: center;
         width: 40%;
         margin-left: 30%; } }
+    .faq__ques--ans {
+      display: flex;
+      flex-direction: column; }
+    .faq__ques--para {
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .faq__ques--open {
+      display: inline;
+      visibility: visible;
+      opacity: 1; }
     .faq__ques--sec {
       display: flex;
       justify-content: space-between;
@@ -486,16 +508,11 @@ button {
     @media only screen and (min-width: 50em) {
       .signup__input {
         max-width: 35rem; } }
-    .signup__input::placeholder {
-      color: #d1d1d1;
-      font-weight: 500;
-      font-size: 1.6rem; }
     .signup__input--btn {
       padding: 1.6rem 10rem;
       border-radius: .6rem;
       border: none;
       background-color: #ff6161;
-      width: 100%;
       color: #fff;
       font-size: 1.6rem;
       font-weight: 500;
@@ -511,11 +528,35 @@ button {
           padding: 1.6rem;
           max-width: 15rem;
           margin-left: 3rem; } }
-  @media only screen and (min-width: 50em) {
-    .signup__form {
-      display: flex;
-      align-items: center;
-      justify-content: center; } }
+  .signup__form {
+    position: relative; }
+    @media only screen and (min-width: 50em) {
+      .signup__form {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
+  .signup__req:before {
+    content: 'This does not look like an email';
+    display: block;
+    height: inherit;
+    max-width: 35rem;
+    background-color: red;
+    position: absolute;
+    text-align: center;
+    padding: .2rem 3.1rem;
+    border-bottom-left-radius: .6rem;
+    border-bottom-right-radius: .6rem; }
+  .signup__email {
+    border: 2px solid red;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-image: url(/images/icon-error.svg);
+    background-position: 95% center;
+    background-repeat: no-repeat; }
+  .signup__input--ph::placeholder {
+    color: grey; }
+  .signup__input--ph.signup__email::placeholder {
+    color: #ff6161; }
 
 .footer {
   padding: 1.6rem 3rem;
