@@ -111,7 +111,7 @@ button {
       height: 3px;
       transition: .5s; }
     .header__menu:before {
-      top: -5.5px; }
+      top: -5.7px; }
     .header__menu:after {
       top: 5.7px; }
   .header__icon.active .header__menu {
