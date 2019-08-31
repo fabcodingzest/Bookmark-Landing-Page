@@ -20,6 +20,9 @@ h2 {
   @media only screen and (min-width: 75em) {
     h2 {
       font-size: 3.8rem; } }
+  @media only screen and (min-width: 75em) {
+    h2 {
+      font-size: 5rem; } }
 
 h3 {
   line-height: 0; }
@@ -43,6 +46,10 @@ p {
 button {
   outline: none; }
 
+@media only screen and (min-width: 56.2em) {
+  .container {
+    margin: 6rem 2rem; } }
+
 @media only screen and (min-width: 75em) {
   .container {
     margin: 6rem 10rem; } }
@@ -58,8 +65,11 @@ button {
       align-items: center; } }
   @media only screen and (min-width: 47em) {
     .header__pbox {
-      margin-top: 5rem;
+      margin-top: 9rem;
       align-items: start; } }
+  @media only screen and (min-width: 75em) {
+    .header__pbox {
+      margin-top: -8rem; } }
   .header__logo {
     width: 14.5rem;
     height: auto;
@@ -69,18 +79,18 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 56.2em) {
       .header__nav {
         display: flex; } }
     .header__nav--content {
       display: none; }
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: 56.2em) {
         .header__nav--content {
           display: flex;
           justify-content: center;
           align-items: center;
           margin-right: 5rem; } }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 56.2em) {
       .header__nav--content a, .header__nav--content a:link, .header__nav--content a:visited {
         text-decoration: none;
         color: black;
@@ -110,7 +120,7 @@ button {
     height: 3px;
     position: relative;
     z-index: 200000; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 56.2em) {
       .header__menu {
         display: none; } }
     .header__menu:before, .header__menu:after {
@@ -150,12 +160,9 @@ button {
     @media only screen and (min-width: 47em) {
       .header__grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 6rem; } }
+        grid-gap: 0rem; } }
     .header__grid--1 {
       position: relative; }
-      @media only screen and (min-width: 47em) {
-        .header__grid--1 {
-          grid-column: 2/3; } }
     .header__grid--bg {
       display: block;
       background: #5267df;
@@ -167,12 +174,6 @@ button {
       top: 14rem;
       right: -3rem;
       z-index: 1; }
-      @media only screen and (min-width: 75em) {
-        .header__grid--bg {
-          top: -10rem;
-          right: -13rem;
-          width: 42rem;
-          height: 25rem; } }
       @media only screen and (min-width: 37.5em) {
         .header__grid--bg {
           width: 45rem;
@@ -181,6 +182,22 @@ button {
         .header__grid--bg {
           width: 25rem;
           height: 18rem; } }
+      @media only screen and (min-width: 56.2em) {
+        .header__grid--bg {
+          top: 12rem;
+          right: -13rem;
+          width: 42rem;
+          height: 25rem; } }
+      @media only screen and (min-width: 75em) {
+        .header__grid--bg {
+          top: -12rem;
+          right: -13rem;
+          width: 42rem;
+          height: 25rem; } }
+      @media only screen and (min-width: 87.5em) {
+        .header__grid--bg {
+          width: 54rem;
+          height: 38rem; } }
     .header__grid--illustration {
       width: 33rem;
       margin: 0;
@@ -188,21 +205,29 @@ button {
       top: 8rem;
       right: -1rem;
       z-index: 10; }
-      @media only screen and (min-width: 75em) {
+      @media only screen and (min-width: 56.2em) {
         .header__grid--illustration {
           width: 50rem;
-          right: -4rem;
-          top: -20rem; } }
+          right: -1rem;
+          top: 5rem; } }
       @media only screen and (min-width: 37.5em) {
         .header__grid--illustration {
           width: 50rem; } }
       @media only screen and (min-width: 47em) {
         .header__grid--illustration {
-          width: 30rem; } }
+          width: 40rem; } }
+      @media only screen and (min-width: 75em) {
+        .header__grid--illustration {
+          top: -20rem;
+          right: -2rem;
+          width: 42rem; } }
+      @media only screen and (min-width: 87.5em) {
+        .header__grid--illustration {
+          width: 60rem; } }
     .header__grid--2 {
       margin: 1.2rem;
       text-align: center; }
-      @media only screen and (min-width: 75em) {
+      @media only screen and (min-width: 56.2em) {
         .header__grid--2 {
           grid-row: 1/2;
           text-align: start; } }
@@ -337,6 +362,9 @@ button {
         width: 80%;
         margin-left: 10%;
         text-align: center; } }
+    @media only screen and (min-width: 47em) {
+      .features__type {
+        display: flex; } }
   .features__button {
     border: none;
     background-color: transparent;
@@ -352,11 +380,14 @@ button {
         border-top: none;
         font-size: 1.4rem;
         padding: 1.8rem 5rem; } }
+    @media only screen and (min-width: 47em) {
+      .features__button {
+        font-size: 1.4rem; } }
     .features__button:hover {
       color: #ff6161; }
     .features__button:first-of-type {
       border-top: 0.1rem solid #c9c9c9; }
-      @media only screen and (min-width: 75em) {
+      @media only screen and (min-width: 47em) {
         .features__button:first-of-type {
           border-top: none; } }
   .features__grid {
@@ -371,6 +402,10 @@ button {
     @media only screen and (min-width: 37.5em) {
       .features__grid {
         grid-gap: 6rem; } }
+    @media only screen and (min-width: 47em) {
+      .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0; } }
   .features__illustration {
     position: relative;
     margin-bottom: 10rem; }
@@ -386,17 +421,25 @@ button {
       top: 10rem;
       z-index: 1;
       transition: .5s ease; }
-      @media only screen and (min-width: 75em) {
-        .features__illustration--bg {
-          width: 50rem;
-          height: 30rem;
-          top: 1rem;
-          left: -14rem; } }
       @media only screen and (min-width: 37.5em) {
         .features__illustration--bg {
           height: 30rem;
           width: 44rem;
           top: 8rem; } }
+      @media only screen and (min-width: 47em) {
+        .features__illustration--bg {
+          width: 35rem;
+          height: 20rem; } }
+      @media only screen and (min-width: 75em) {
+        .features__illustration--bg {
+          width: 50rem;
+          height: 30rem;
+          top: -2rem;
+          left: -14rem; } }
+      @media only screen and (min-width: 87.5em) {
+        .features__illustration--bg {
+          width: 58rem;
+          height: 34rem; } }
     .features__illustration--img {
       width: 28rem;
       height: 20rem;
@@ -407,18 +450,29 @@ button {
       left: 1.2rem;
       z-index: 10;
       transition: .5s all ease; }
-      @media only screen and (min-width: 75em) {
-        .features__illustration--img {
-          width: 40rem;
-          height: auto;
-          top: -6rem;
-          left: 4rem; } }
       @media only screen and (min-width: 37.5em) {
         .features__illustration--img {
           width: 40rem;
           height: auto;
           top: 4rem;
           left: 5rem; } }
+      @media only screen and (min-width: 47em) {
+        .features__illustration--img {
+          width: 30rem; } }
+      @media only screen and (min-width: 75em) {
+        .features__illustration--img {
+          width: 40rem;
+          height: auto;
+          top: -6rem;
+          left: 4rem; } }
+      @media only screen and (min-width: 87.5em) {
+        .features__illustration--img {
+          width: 50rem;
+          top: -10rem; } }
+  @media only screen and (min-width: 47em) {
+    .features__bookmark {
+      align-self: center;
+      text-align: start; } }
   .features__red {
     display: flex;
     justify-content: center;
@@ -432,6 +486,9 @@ button {
       .features__red {
         width: 100%;
         left: 0; } }
+    @media only screen and (min-width: 47em) {
+      .features__red {
+        top: 4.5rem; } }
 
 .download {
   margin: 3rem;
@@ -446,6 +503,10 @@ button {
       .download__grid {
         flex-direction: row;
         margin: 8rem 0; } }
+    @media only screen and (min-width: 56.2em) {
+      .download__grid {
+        flex-direction: row;
+        margin: 0; } }
   @media only screen and (min-width: 37.5em) {
     .download__p {
       display: flex;
@@ -458,6 +519,9 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center; } }
+    @media only screen and (min-width: 87.5em) {
+      .download__head {
+        margin-bottom: 5rem; } }
   .download__card {
     margin-top: 3rem;
     width: 28rem;
@@ -469,14 +533,23 @@ button {
     align-items: center;
     border-radius: 1.4rem;
     box-shadow: 0 0.5rem 1.4rem #e6e6e6; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 56.2em) {
       .download__card {
-        margin-right: 4rem; } }
+        margin-right: 4rem;
+        min-width: 24rem;
+        overflow-x: hidden; } }
+    @media only screen and (min-width: 56.2em) {
+      .download__card:last-child {
+        margin-right: 0; } }
     .download__card--dots {
       margin-top: 4rem; }
     .download__card--img {
       margin-bottom: 4rem;
       margin-top: 4rem; }
+      @media only screen and (min-width: 56.2em) {
+        .download__card--img {
+          max-width: 24rem;
+          margin-top: 1rem; } }
     .download__card--btn {
       border: none;
       margin-top: 3rem;
@@ -490,15 +563,22 @@ button {
       box-shadow: 0 0.3rem 0.8rem #b6b6b6;
       color: #fff;
       cursor: pointer; }
+      @media only screen and (min-width: 56.2em) {
+        .download__card--btn {
+          margin: 1rem;
+          margin-top: 1.5rem;
+          padding: 1.6rem 1rem;
+          margin-bottom: 0rem;
+          font-size: 1.2rem; } }
       .download__card--btn:hover, .download__card--btn:active {
         background-color: #fff;
         border: .2rem solid #5267df;
         border-radius: .5rem;
         color: #5267df; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 56.2em) {
       .download__card--1 {
         transform: translateY(-5rem); } }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 56.2em) {
       .download__card--3 {
         transform: translateY(5rem); } }
 
@@ -520,7 +600,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 56.2em) {
       .faq__ques {
         justify-content: center;
         width: 40%;
@@ -586,7 +666,7 @@ button {
     padding: 1.6rem;
     border-radius: .6rem;
     border: none; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 47em) {
       .signup__input {
         max-width: 35rem; } }
     .signup__input--btn {
@@ -604,14 +684,14 @@ button {
         border: .2rem solid #ff6161;
         border-radius: .6rem;
         color: #ff6161; }
-      @media only screen and (min-width: 75em) {
+      @media only screen and (min-width: 47em) {
         .signup__input--btn {
           padding: 1.6rem;
           max-width: 15rem;
           margin-left: 3rem; } }
   .signup__form {
     position: relative; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 47em) {
       .signup__form {
         display: flex;
         align-items: center;
@@ -645,6 +725,13 @@ button {
   text-align: center;
   display: flex;
   flex-direction: column; }
+  @media only screen and (min-width: 56.2em) {
+    .footer {
+      padding: 2rem 3rem; } }
+  .footer__credit {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 4rem; }
   .footer__flex {
     display: flex;
     flex-direction: column;
@@ -656,14 +743,28 @@ button {
       @media only screen and (min-width: 75em) {
         .footer__flex a {
           margin-right: 5rem; } }
-    @media only screen and (min-width: 75em) {
+      @media only screen and (min-width: 47em) {
+        .footer__flex a {
+          margin-bottom: 0; } }
+    @media only screen and (min-width: 47em) {
       .footer__flex {
         flex-direction: row;
         justify-content: start; } }
+    @media only screen and (min-width: 47em) {
+      .footer__flex {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        width: 100%; } }
     .footer__flex svg,
     .footer__flex h5,
     .footer__flex div {
       margin: 1.5rem; }
+      @media only screen and (min-width: 47em) {
+        .footer__flex svg,
+        .footer__flex h5,
+        .footer__flex div {
+          margin: 0; } }
     .footer__flex svg path {
       fill: #fff; }
     .footer__flex--social {
@@ -671,6 +772,9 @@ button {
       grid-template-columns: repeat(2, 6rem);
       align-items: center;
       justify-items: center; }
+      @media only screen and (min-width: 47em) {
+        .footer__flex--social {
+          margin-left: 0; } }
       .footer__flex--social a:hover svg path {
         fill: #ff8e8e; }
     @media only screen and (min-width: 75em) {

@@ -123,13 +123,14 @@
   //600px -> header img & Bg Big - DONE
              + para width limit  - DONE
 
-  //768px -> header & feature grid 
+  //768px -> header & feature grid - DONE
+             footer fix - DONE
 
-  //900px -> Download flex row,
-             feature head flex row + font small,
-             + Mobile nav display none,
-              desktop nav
-              footer 
+  //900px -> Download flex row & translate, - DONE
+             feature head flex row + font small, - DONE
+             + Mobile nav display none, -DONE
+              desktop nav - DONE
+              footer -DONE
 
   //1200px - DONE
 

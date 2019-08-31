@@ -23,7 +23,7 @@
         border-radius: .6rem;
         border: none;
 
-        @media only screen and (min-width: $bp-large) {
+        @media only screen and (min-width: $bp-tab) {
             max-width: 35rem;
         }
         
@@ -46,7 +46,7 @@
                 color: #ff6161;
             }
 
-            @media only screen and (min-width: $bp-large) {
+            @media only screen and (min-width: $bp-tab) {
                 padding: 1.6rem;
                 max-width: 15rem;
                 margin-left: 3rem;
@@ -57,7 +57,7 @@
     &__form{
         position: relative;
 
-        @media only screen and (min-width: $bp-large) {
+        @media only screen and (min-width: $bp-tab) {
             display: flex;
             align-items: center;
             justify-content: center;

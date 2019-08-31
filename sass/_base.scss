@@ -24,6 +24,10 @@ h2{
     @media only screen and (min-width: $bp-large) {
         font-size: 3.8rem;
     }
+
+    @media only screen and (min-width: $bp-large) {
+        font-size: 5rem;
+    }
 }
 
 h3{
@@ -54,6 +58,11 @@ button{
     outline: none;
 }
 .container{
+
+    @media only screen and (min-width: $bp-land) {
+        
+        margin:  6rem 2rem;
+    }
     @media only screen and (min-width: $bp-large) {
         
         margin: 6rem 10rem;
