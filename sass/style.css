@@ -15,7 +15,8 @@ body {
 
 h2 {
   font-size: 2.6rem;
-  font-weight: 500; }
+  font-weight: 500;
+  transition: .5s all ease; }
   @media only screen and (min-width: 50em) {
     h2 {
       font-size: 4rem; } }
@@ -305,8 +306,7 @@ button {
           border-top: none; } }
   .features__grid {
     display: grid;
-    grid-template-rows: 35rem max-content;
-    transition: .5s ease; }
+    grid-template-rows: 35rem max-content; }
     @media only screen and (min-width: 50em) {
       .features__grid {
         grid-template-columns: repeat(2, 1fr);
@@ -326,7 +326,8 @@ button {
       position: absolute;
       left: -4.4rem;
       top: 10rem;
-      z-index: 1; }
+      z-index: 1;
+      transition: .5s ease; }
       @media only screen and (min-width: 50em) {
         .features__illustration--bg {
           width: 62rem;
@@ -334,14 +335,15 @@ button {
           top: 1rem;
           left: -14rem; } }
     .features__illustration--img {
-      width: 31rem;
+      width: 28rem;
       height: 20rem;
       margin: 0;
       margin-top: 0rem;
       position: absolute;
       top: 6rem;
       left: 1.2rem;
-      z-index: 10; }
+      z-index: 10;
+      transition: .5s all ease; }
       @media only screen and (min-width: 50em) {
         .features__illustration--img {
           width: 48rem;
@@ -535,17 +537,16 @@ button {
         display: flex;
         align-items: center;
         justify-content: center; } }
-  .signup__req:before {
-    content: 'This does not look like an email';
+  .signup__invalid {
+    display: none;
+    visibility: hidden; }
+  .signup__req {
+    width: 100%;
     display: block;
-    height: inherit;
-    max-width: 35rem;
     background-color: red;
-    position: absolute;
-    text-align: center;
-    padding: .2rem 3.1rem;
     border-bottom-left-radius: .6rem;
-    border-bottom-right-radius: .6rem; }
+    border-bottom-right-radius: .6rem;
+    visibility: visible; }
   .signup__email {
     border: 2px solid red;
     border-bottom-left-radius: 0;

@@ -19,6 +19,7 @@ body{
 h2{
     font-size: 2.6rem;
     font-weight: 500;
+    transition: .5s all ease;
 
     @media only screen and (min-width: $bp-large) {
         font-size: 4rem;

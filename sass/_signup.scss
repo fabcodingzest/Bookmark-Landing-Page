@@ -65,20 +65,37 @@
         }
     }
 
-
-    &__req:before{
-        content: 'This does not look like an email';
-        display: block;
-        height: inherit;
-        max-width: 35rem;;
-        background-color: red;
-        position: absolute;
-        text-align: center;
-        padding: .2rem 3.1rem;
-        border-bottom-left-radius: .6rem;
-        border-bottom-right-radius: .6rem;
-
+    &__invalid{
+        display: none;
+        visibility: hidden;
     }
+
+        &__req{
+            width: 100%;
+            display: block;
+            background-color: red;
+            border-bottom-left-radius: .6rem;
+            border-bottom-right-radius: .6rem;
+            visibility: visible;
+        }
+
+    // &__req:before{
+    //     content: 'This does not look like an email';
+    //     display: block;
+    //     height: inherit;
+    //     background-color: red;
+    //     position: absolute;
+    //     text-align: center;
+    //     padding: .2rem 1.3rem;
+    //     border-bottom-left-radius: .6rem;
+    //     border-bottom-right-radius: .6rem;
+    //     //width: 100%;
+
+    //     @media only screen and (min-width: $bp-large) {
+    //         max-width: 35rem;
+    //     }
+
+    // }
 
 
     &__email{

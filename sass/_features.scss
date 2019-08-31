@@ -59,7 +59,6 @@
     &__grid{
         display: grid;
         grid-template-rows: 35rem max-content;
-        transition: .5s ease;
 
         @media only screen and (min-width: $bp-large) {
             grid-template-columns: repeat(2,1fr);
@@ -84,6 +83,7 @@
             left: -4.4rem;
             top:  10rem;
             z-index: 1;
+            transition: .5s ease;
 
             
             @media only screen and (min-width: $bp-large) {
@@ -95,7 +95,7 @@
         }
 
         &--img{
-            width: 31rem;
+            width: 28rem;
             height: 20rem;
             margin: 0;
             margin-top: 0rem;
@@ -103,6 +103,7 @@
             top: 6rem;
             left: 1.2rem;
             z-index: 10;
+            transition: .5s all ease;
 
             @media only screen and (min-width: $bp-large) {
                 width: 48rem;

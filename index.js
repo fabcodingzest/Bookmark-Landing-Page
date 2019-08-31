@@ -38,9 +38,7 @@ form.addEventListener('click', function(){
 });
 
 
-const Sb = document.querySelector('.features__button--1');
-const Ss = document.querySelector('.features__button--2');
-const Es = document.querySelector('.features__button--3');
+
 const features = document.querySelectorAll('.features__button');
 
 const illus = document.querySelector('.features__illustration');
