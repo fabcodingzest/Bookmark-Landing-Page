@@ -5,14 +5,31 @@
         color: #ff6161;
     }
 
+    &__pbox{
+            
+        @media only screen and (min-width: $bp-small) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media only screen and (min-width: $bp-tab) {
+            margin-top: 5rem;
+            align-items: start;
+        }
+    }
+
     &__logo{
         width: 14.5rem;
         height: auto;
+        display: flex;
+        align-items: center;
     }
 
     &__nav{
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         @media only screen and (min-width: $bp-large) {
             display: flex;
@@ -21,7 +38,7 @@
         &--content{
             display: none;
 
-            @media only screen and (min-width: $bp-large) {
+            @media only screen and (min-width: $bp-land) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -33,7 +50,7 @@
 
         &--content a, &--content a:link, &--content a:visited{
             
-            @media only screen and (min-width: $bp-large) {
+            @media only screen and (min-width: $bp-land) {
                 text-decoration: none;
                 color: black;
                 margin-right: 5rem;
@@ -67,13 +84,6 @@
 
     }
 
-    &__menu{
-
-
-        @media only screen and (min-width: $bp-large) {
-            display: none;
-        }
-    }
 
         &__menu{
             display: inline-block;
@@ -83,7 +93,7 @@
             position: relative;
             z-index: 200000;
 
-            @media only screen and (min-width: $bp-large) {
+            @media only screen and (min-width: $bp-land) {
                 display: none;
             }
 
@@ -129,6 +139,8 @@
         margin: 0;
         display: grid;
         grid-template-rows: 38rem max-content;
+        position: relative;
+        grid-gap: 10rem;
 
         @media only screen and (min-width: $bp-large) {
             grid-template-columns: repeat(2,1fr);
@@ -137,10 +149,19 @@
             margin: 10rem 0;
         }
 
+        @media only screen and (min-width: $bp-tab) {
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 6rem;
+        }
+
+        
+
         &--1{
             position: relative;
 
-            
+            @media only screen and (min-width: $bp-tab) {
+                grid-column: 2/3;
+            }
         }
         
         &--bg{
@@ -158,23 +179,40 @@
                 @media only screen and (min-width: $bp-large) {
                     top: -10rem;
                     right: -13rem;
-                    width: 50rem;
-                    height: 35rem;
+                    width: 42rem;
+                    height: 25rem;
+                }
+
+                @media only screen and (min-width: $bp-small) {
+                    width: 45rem;
+                    height: 30rem;
+                }
+
+                @media only screen and (min-width: $bp-tab) {
+                    width: 25rem;
+                    height: 18rem;
                 }
         }
 
         &--illustration{
             width: 33rem;
             margin: 0;
-            margin-top: 8rem;
             position: absolute;
+            top: 8rem;
             right: -1rem;
             z-index: 10;
             
             @media only screen and (min-width: $bp-large) {
-                width: 62rem;
-                left: 10rem;
-                top: -28rem;
+                width: 50rem;
+                right: -4rem;;
+                top: -20rem;
+            }
+            @media only screen and (min-width: $bp-small) {
+                width: 50rem;
+            }
+
+            @media only screen and (min-width: $bp-tab) {
+                width: 30rem;
             }
         }
 
@@ -185,12 +223,21 @@
                 grid-row: 1/2;
                 text-align: start;
             }
+
+            @media only screen and (min-width: $bp-tab) {
+                text-align: start;
+            }
+
+            @media only screen and (min-width: $bp-tab) {
+                grid-row: 1/1;
+            }
         }
+
 
         &--button{
             border: none;
             margin-top: 3rem;
-            padding: 1.4rem;
+            padding: 1.2rem;
             border-radius: .5rem;
             background-color: rgb(240, 240, 240);
             margin-right: .9rem;
@@ -247,7 +294,7 @@
         &.open{
             opacity: 1;
             visibility: visible;
-            height: 100%
+            height: 100%;
         }
 
         &--nav{

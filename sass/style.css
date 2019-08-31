@@ -17,9 +17,9 @@ h2 {
   font-size: 2.6rem;
   font-weight: 500;
   transition: .5s all ease; }
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: 75em) {
     h2 {
-      font-size: 4rem; } }
+      font-size: 3.8rem; } }
 
 h3 {
   line-height: 0; }
@@ -35,14 +35,15 @@ p {
   margin-top: 2rem;
   line-height: 1.6;
   transition: all .2s ease-out; }
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: 37.5em) {
     p {
-      font-size: 1.4rem; } }
+      font-size: 1.5rem;
+      max-width: 44rem; } }
 
 button {
   outline: none; }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 75em) {
   .container {
     margin: 6rem 10rem; } }
 
@@ -50,13 +51,25 @@ button {
   margin: 3rem; }
   .header a:hover {
     color: #ff6161; }
+  @media only screen and (min-width: 37.5em) {
+    .header__pbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  @media only screen and (min-width: 47em) {
+    .header__pbox {
+      margin-top: 5rem;
+      align-items: start; } }
   .header__logo {
     width: 14.5rem;
-    height: auto; }
+    height: auto;
+    display: flex;
+    align-items: center; }
   .header__nav {
     display: flex;
-    justify-content: space-between; }
-    @media only screen and (min-width: 50em) {
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (min-width: 75em) {
       .header__nav {
         display: flex; } }
     .header__nav--content {
@@ -90,9 +103,6 @@ button {
       border: .4rem solid #ff6161;
       border-radius: .6rem;
       color: #ff6161; }
-  @media only screen and (min-width: 50em) {
-    .header__menu {
-      display: none; } }
   .header__menu {
     display: inline-block;
     background-color: #000;
@@ -128,15 +138,24 @@ button {
   .header__grid {
     margin: 0;
     display: grid;
-    grid-template-rows: 38rem max-content; }
-    @media only screen and (min-width: 50em) {
+    grid-template-rows: 38rem max-content;
+    position: relative;
+    grid-gap: 10rem; }
+    @media only screen and (min-width: 75em) {
       .header__grid {
         grid-template-columns: repeat(2, 1fr);
         text-align: start;
         align-items: center;
         margin: 10rem 0; } }
+    @media only screen and (min-width: 47em) {
+      .header__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 6rem; } }
     .header__grid--1 {
       position: relative; }
+      @media only screen and (min-width: 47em) {
+        .header__grid--1 {
+          grid-column: 2/3; } }
     .header__grid--bg {
       display: block;
       background: #5267df;
@@ -148,35 +167,55 @@ button {
       top: 14rem;
       right: -3rem;
       z-index: 1; }
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: 75em) {
         .header__grid--bg {
           top: -10rem;
           right: -13rem;
-          width: 50rem;
-          height: 35rem; } }
+          width: 42rem;
+          height: 25rem; } }
+      @media only screen and (min-width: 37.5em) {
+        .header__grid--bg {
+          width: 45rem;
+          height: 30rem; } }
+      @media only screen and (min-width: 47em) {
+        .header__grid--bg {
+          width: 25rem;
+          height: 18rem; } }
     .header__grid--illustration {
       width: 33rem;
       margin: 0;
-      margin-top: 8rem;
       position: absolute;
+      top: 8rem;
       right: -1rem;
       z-index: 10; }
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: 75em) {
         .header__grid--illustration {
-          width: 62rem;
-          left: 10rem;
-          top: -28rem; } }
+          width: 50rem;
+          right: -4rem;
+          top: -20rem; } }
+      @media only screen and (min-width: 37.5em) {
+        .header__grid--illustration {
+          width: 50rem; } }
+      @media only screen and (min-width: 47em) {
+        .header__grid--illustration {
+          width: 30rem; } }
     .header__grid--2 {
       margin: 1.2rem;
       text-align: center; }
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: 75em) {
         .header__grid--2 {
           grid-row: 1/2;
           text-align: start; } }
+      @media only screen and (min-width: 47em) {
+        .header__grid--2 {
+          text-align: start; } }
+      @media only screen and (min-width: 47em) {
+        .header__grid--2 {
+          grid-row: 1/1; } }
     .header__grid--button {
       border: none;
       margin-top: 3rem;
-      padding: 1.4rem;
+      padding: 1.2rem;
       border-radius: .5rem;
       background-color: #f0f0f0;
       margin-right: .9rem;
@@ -265,22 +304,33 @@ button {
 .features {
   margin: 12rem 3rem;
   text-align: center; }
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: 75em) {
     .features {
       text-align: start; } }
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: 75em) {
     .features {
       display: flex;
       flex-direction: column;
       justify-content: center; } }
+  @media only screen and (min-width: 47em) {
+    .features {
+      margin-top: 0; } }
+  @media only screen and (min-width: 37.5em) {
+    .features__p {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .features__box {
     margin-bottom: 4rem; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 37.5em) {
       .features__box {
-        text-align: center; } }
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
   .features__type {
     list-style: none; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .features__type {
         display: flex;
         justify-content: center;
@@ -297,22 +347,30 @@ button {
     position: relative;
     cursor: pointer;
     outline: none; }
+    @media only screen and (min-width: 75em) {
+      .features__button {
+        border-top: none;
+        font-size: 1.4rem;
+        padding: 1.8rem 5rem; } }
     .features__button:hover {
       color: #ff6161; }
     .features__button:first-of-type {
       border-top: 0.1rem solid #c9c9c9; }
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: 75em) {
         .features__button:first-of-type {
           border-top: none; } }
   .features__grid {
     display: grid;
     grid-template-rows: 35rem max-content; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .features__grid {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         margin: 2rem 0;
         grid-gap: 5rem; } }
+    @media only screen and (min-width: 37.5em) {
+      .features__grid {
+        grid-gap: 6rem; } }
   .features__illustration {
     position: relative;
     margin-bottom: 10rem; }
@@ -328,12 +386,17 @@ button {
       top: 10rem;
       z-index: 1;
       transition: .5s ease; }
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: 75em) {
         .features__illustration--bg {
-          width: 62rem;
+          width: 50rem;
           height: 30rem;
           top: 1rem;
           left: -14rem; } }
+      @media only screen and (min-width: 37.5em) {
+        .features__illustration--bg {
+          height: 30rem;
+          width: 44rem;
+          top: 8rem; } }
     .features__illustration--img {
       width: 28rem;
       height: 20rem;
@@ -344,12 +407,18 @@ button {
       left: 1.2rem;
       z-index: 10;
       transition: .5s all ease; }
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: 75em) {
         .features__illustration--img {
-          width: 48rem;
+          width: 40rem;
           height: auto;
-          top: -8rem;
+          top: -6rem;
           left: 4rem; } }
+      @media only screen and (min-width: 37.5em) {
+        .features__illustration--img {
+          width: 40rem;
+          height: auto;
+          top: 4rem;
+          left: 5rem; } }
   .features__red {
     display: flex;
     justify-content: center;
@@ -359,13 +428,10 @@ button {
     position: absolute;
     top: 5.1rem;
     left: 30%; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .features__red {
         width: 100%;
         left: 0; } }
-  @media only screen and (min-width: 50em) {
-    .features__center {
-      padding: 0 34rem; } }
 
 .download {
   margin: 3rem;
@@ -376,12 +442,22 @@ button {
     justify-content: center;
     align-items: center;
     margin: 5rem; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .download__grid {
         flex-direction: row;
         margin: 8rem 0; } }
+  @media only screen and (min-width: 37.5em) {
+    .download__p {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .download__head {
     text-align: center; }
+    @media only screen and (min-width: 75em) {
+      .download__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
   .download__card {
     margin-top: 3rem;
     width: 28rem;
@@ -393,7 +469,7 @@ button {
     align-items: center;
     border-radius: 1.4rem;
     box-shadow: 0 0.5rem 1.4rem #e6e6e6; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .download__card {
         margin-right: 4rem; } }
     .download__card--dots {
@@ -419,20 +495,23 @@ button {
         border: .2rem solid #5267df;
         border-radius: .5rem;
         color: #5267df; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .download__card--1 {
         transform: translateY(-5rem); } }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .download__card--3 {
         transform: translateY(5rem); } }
-  .download__p {
-    padding: 0 40rem; }
 
 .faq {
   margin: 3rem; }
   .faq__head {
     text-align: center;
     margin-bottom: 6rem; }
+    @media only screen and (min-width: 37.5em) {
+      .faq__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
   .faq__arrow {
     transform: rotate(180deg); }
     .faq__arrow svg path {
@@ -441,7 +520,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .faq__ques {
         justify-content: center;
         width: 40%;
@@ -484,9 +563,9 @@ button {
         border: .2rem solid #5267df;
         border-radius: .5rem;
         color: #5267df; }
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: 75em) {
     .faq__p {
-      padding: 0 34rem; } }
+      padding: 0 20rem; } }
 
 .signup {
   padding: 3rem;
@@ -507,7 +586,7 @@ button {
     padding: 1.6rem;
     border-radius: .6rem;
     border: none; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .signup__input {
         max-width: 35rem; } }
     .signup__input--btn {
@@ -525,14 +604,14 @@ button {
         border: .2rem solid #ff6161;
         border-radius: .6rem;
         color: #ff6161; }
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: 75em) {
         .signup__input--btn {
           padding: 1.6rem;
           max-width: 15rem;
           margin-left: 3rem; } }
   .signup__form {
     position: relative; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .signup__form {
         display: flex;
         align-items: center;
@@ -574,10 +653,10 @@ button {
     margin: 1rem 8rem; }
     .footer__flex a {
       margin-bottom: 2.5rem; }
-      @media only screen and (min-width: 50em) {
+      @media only screen and (min-width: 75em) {
         .footer__flex a {
           margin-right: 5rem; } }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .footer__flex {
         flex-direction: row;
         justify-content: start; } }
@@ -594,7 +673,7 @@ button {
       justify-items: center; }
       .footer__flex--social a:hover svg path {
         fill: #ff8e8e; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 75em) {
       .footer__flex div {
         align-self: flex-end;
         margin-left: auto; } }

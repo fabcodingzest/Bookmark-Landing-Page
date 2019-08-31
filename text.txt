@@ -113,3 +113,26 @@
   Features
   Pricing
   Contact
+
+
+
+
+  // 31 August 2019
+
+
+  //600px -> header img & Bg Big - DONE
+             + para width limit  - DONE
+
+  //768px -> header & feature grid 
+
+  //900px -> Download flex row,
+             feature head flex row + font small,
+             + Mobile nav display none,
+              desktop nav
+              footer 
+
+  //1200px - DONE
+
+  //1600px + - bg size increase + font size increase
+
+  // JAVASCRIPT feature span 

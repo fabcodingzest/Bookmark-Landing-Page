@@ -12,12 +12,28 @@
         justify-content: center;
         
     }
+
+    @media only screen and (min-width: $bp-tab) {
+        margin-top: 0;
+    }
+
+    &__p{
+            
+        @media only screen and (min-width: $bp-small) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     
     &__box{
         margin-bottom: 4rem;
 
-        @media only screen and (min-width: $bp-large) {
+        @media only screen and (min-width: $bp-small) {
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
     }
@@ -43,6 +59,12 @@
         cursor: pointer;
         outline: none;
 
+        @media only screen and (min-width: $bp-large) {
+            border-top: none;
+            font-size: 1.4rem;
+            padding: 1.8rem 5rem;
+        }
+
         &:hover{
             color: #ff6161;
         }
@@ -66,6 +88,10 @@
             margin: 2rem 0;
             grid-gap: 5rem;
         }
+
+        @media only screen and (min-width: $bp-small) {
+            grid-gap: 6rem;
+        }
     }
 
     &__illustration{
@@ -87,10 +113,16 @@
 
             
             @media only screen and (min-width: $bp-large) {
-                width: 62rem;
+                width: 50rem;
                 height: 30rem;
                 top: 1rem;
                 left: -14rem;
+            }
+
+            @media only screen and (min-width: $bp-small) {
+                height: 30rem;
+                width: 44rem;
+                top: 8rem;
             }
         }
 
@@ -106,10 +138,17 @@
             transition: .5s all ease;
 
             @media only screen and (min-width: $bp-large) {
-                width: 48rem;
+                width: 40rem;
                 height: auto;
-                top: -8rem;
+                top: -6rem;
                 left: 4rem;
+            }
+
+            @media only screen and (min-width: $bp-small) {
+                width: 40rem;
+                height: auto;
+                top: 4rem;
+                left: 5rem;
             }
         }
     }
@@ -130,10 +169,4 @@
         }
     }
 
-    &__center{
-
-        @media only screen and (min-width: $bp-large) {
-            padding: 0 34rem;
-        }
-    }
 }

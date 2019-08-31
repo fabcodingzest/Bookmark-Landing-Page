@@ -22,7 +22,7 @@ h2{
     transition: .5s all ease;
 
     @media only screen and (min-width: $bp-large) {
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
 }
 
@@ -44,8 +44,9 @@ p{
     transition: all .2s ease-out;
 
 
-    @media only screen and (min-width: $bp-large) {
-        font-size: 1.4rem;
+    @media only screen and (min-width: $bp-small) {
+        font-size: 1.5rem;
+        max-width: 44rem;
     }
 }
 
