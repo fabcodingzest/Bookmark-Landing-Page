@@ -209,13 +209,19 @@
         top: 5.1rem;
         left: 30%;
 
-        @media only screen and (min-width: $bp-large) {
-            width: 100%;
-            left: 0;
-        }
-
         @media only screen and (min-width: $bp-tab) {
             top: 4.5rem;
+        }
+
+        @media only screen and (min-width: $bp-land) {
+            width: 100%;
+            left: 0;
+            top: 4.6rem;
+        }
+
+
+        @media only screen and (min-width: $bp-large) {
+            top: 5rem;
         }
     }
 
