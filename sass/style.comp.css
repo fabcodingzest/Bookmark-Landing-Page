@@ -169,11 +169,11 @@ button {
   .header__icon.active .header__menu {
     background: rgba(0, 0, 0, 0); }
   .header__icon.active .header__menu:before {
-    top: 2.2rem;
+    top: 0rem;
     transform: rotate(45deg);
     background-color: #fff; }
   .header__icon.active .header__menu:after {
-    top: 2.2rem;
+    top: 0;
     transform: rotate(135deg);
     background-color: #fff; }
   .header__grid {
