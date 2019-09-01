@@ -123,7 +123,7 @@ button {
     width: 20px;
     height: 3px;
     position: relative;
-    top: 2.4rem;
+    top: 0rem;
     z-index: 200000; }
     @media only screen and (min-width: 57em) {
       .header__menu {
@@ -146,11 +146,15 @@ button {
     right: 3rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 5rem;
     height: 5rem;
     background-color: #e2d9d9;
     border-radius: 20rem;
     z-index: 20000; }
+    @media only screen and (min-width: 57em) {
+      .header__icon {
+        display: none; } }
   .header__icon.active .header__menu {
     background: rgba(0, 0, 0, 0); }
   .header__icon.active .header__menu:before {
@@ -166,7 +170,7 @@ button {
     display: grid;
     grid-template-rows: 38rem max-content;
     position: relative;
-    grid-gap: 5rem; }
+    grid-gap: 2rem; }
     @media only screen and (min-width: 75em) {
       .header__grid {
         grid-template-columns: repeat(2, 1fr);
