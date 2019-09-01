@@ -653,7 +653,8 @@ button {
     text-align: center;
     align-items: center;
     border-radius: 1.4rem;
-    box-shadow: 0 0.5rem 1.4rem #e6e6e6; }
+    box-shadow: 0 0.5rem 1.4rem #e6e6e6;
+    overflow-x: hidden; }
     @media only screen and (min-width: 57em) {
       .download__card {
         margin-right: 4rem;
