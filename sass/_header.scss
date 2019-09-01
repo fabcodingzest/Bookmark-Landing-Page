@@ -145,7 +145,7 @@
         display: grid;
         grid-template-rows: 38rem max-content;
         position: relative;
-        grid-gap: 10rem;
+        //grid-gap: 10rem;
 
         @media only screen and (min-width: $bp-large) {
             grid-template-columns: repeat(2,1fr);

@@ -14,7 +14,6 @@ body {
   font-family: 'Rubik', sans-serif; }
 
 h2 {
-  font-size: 2.6rem;
   font-weight: 500;
   transition: .5s all ease; }
   @media only screen and (min-width: 75em) {
@@ -34,13 +33,11 @@ h5 {
 
 p {
   color: #9194a1;
-  font-size: 1.5rem;
   margin-top: 2rem;
   line-height: 1.6;
   transition: all .2s ease-out; }
   @media only screen and (min-width: 37.5em) {
     p {
-      font-size: 1.5rem;
       max-width: 44rem; } }
 
 button {
@@ -149,8 +146,7 @@ button {
     margin: 0;
     display: grid;
     grid-template-rows: 38rem max-content;
-    position: relative;
-    grid-gap: 10rem; }
+    position: relative; }
     @media only screen and (min-width: 75em) {
       .header__grid {
         grid-template-columns: repeat(2, 1fr);
@@ -327,7 +323,7 @@ button {
     grid-gap: 55%; }
 
 .features {
-  margin: 12rem 3rem;
+  margin: 3rem 3rem;
   text-align: center; }
   @media only screen and (min-width: 75em) {
     .features {
@@ -339,7 +335,7 @@ button {
       justify-content: center; } }
   @media only screen and (min-width: 47em) {
     .features {
-      margin-top: 0; } }
+      margin: 0rem 3rem; } }
   @media only screen and (min-width: 37.5em) {
     .features__p {
       display: flex;
