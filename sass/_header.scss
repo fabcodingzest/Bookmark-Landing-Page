@@ -92,7 +92,7 @@
 
         &__menu{
             display: inline-block;
-            background-color: #000;
+            background-color: #fff;
             width: 20px;
             height: 3px;
             top: 0rem;
@@ -107,7 +107,7 @@
                 display: block;
                 content: '';
                 position: absolute;
-                background-color: #000;
+                background-color: #fff;
                 width: 20px;
                 height: 3px;  
                 transition: .5s;
@@ -133,7 +133,7 @@
             align-items: center;
             width: 5rem;
             height: 5rem;
-            background-color: rgb(226, 217, 217);
+            background-color: hsl(229, 31%, 21%);
             border-radius: 20rem;
             z-index: 20000;
 
@@ -148,12 +148,12 @@
             
         }
         &__icon.active .header__menu:before{
-            top: 0;
+            top: 2.2rem;
             transform:rotate(45deg);
             background-color: #fff;
         }
         &__icon.active .header__menu:after{
-            top: 0;
+            top: 2.2rem;
             transform:rotate(135deg);
             background-color: #fff;
         }
@@ -369,6 +369,12 @@
             border-radius: .6rem;
             color: #fff;
             font-size: 2rem;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow: 0rem .4rem 1rem #fff;
+            }
+
         }
         
         &__last{
@@ -395,12 +401,17 @@
         margin: 1rem;
         border-bottom: 2px solid #8388a8ec;
         padding: 1rem;
+
     }
     
     &__links a{
         color: #fff;
         font-size: 2.5rem;
         text-decoration: none;
+        &:hover{
+            color: #fff;
+            text-shadow: .2rem .2rem .4rem  #fff;
+        }
     }
 
     &__last{

@@ -7,20 +7,30 @@ const faqPara = document.querySelectorAll(".faq__ques--para");
 const faqArrow = document.querySelectorAll(".faq-arrow");
 
 const removeNav = document.querySelectorAll(".header__links");
+const login = document.querySelector(".header__mobile--btn");
 
 const form = document.querySelector(".signup__input--btn");
 const formInput = document.querySelectorAll(".signup__input")[1];
 const formSpan = document.querySelector(".signup__invalid");
 
+
+//Mobile Hamburger menu
 menuOpen.addEventListener('click', function(){
     menuOpen.classList.toggle('active');
     mobileNav.classList.toggle('open');
+
     for(let i = 0 ; i < removeNav.length ; i++ ){
         removeNav[i].addEventListener('click', function(){
             mobileNav.classList.remove('open');
             menuOpen.classList.remove('active');
-        })
+        });
     }
+
+    login.addEventListener('click', function(){
+    mobileNav.classList.remove('open');
+    menuOpen.classList.remove('active');
+    });
+    
 });
 
 
