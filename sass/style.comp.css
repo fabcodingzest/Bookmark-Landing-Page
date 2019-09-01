@@ -458,6 +458,11 @@ button {
           top: 8rem; } }
       @media only screen and (min-width: 47em) {
         .features__illustration--bg {
+          width: 34rem;
+          height: 22rem;
+          left: -5rem; } }
+      @media only screen and (min-width: 57em) {
+        .features__illustration--bg {
           width: 40rem;
           height: 25rem;
           left: -5rem; } }
@@ -488,6 +493,9 @@ button {
           left: 5rem; } }
       @media only screen and (min-width: 47em) {
         .features__illustration--img {
+          width: 28rem; } }
+      @media only screen and (min-width: 57em) {
+        .features__illustration--img {
           width: 32rem; } }
       @media only screen and (min-width: 75em) {
         .features__illustration--img {
@@ -514,12 +522,13 @@ button {
     align-self: center; }
     @media only screen and (min-width: 47em) {
       .features__info {
-        align-self: end; } }
+        align-self: flex-end; } }
   .features__bookmark {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    margin-right: 2rem; }
     @media only screen and (min-width: 57em) {
       .features__bookmark {
         align-items: flex-end;
