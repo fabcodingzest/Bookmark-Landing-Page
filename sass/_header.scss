@@ -191,8 +191,8 @@
                 }
                 @media only screen and (min-width: $bp-land) {
                     top: 12rem;
-                    right: -13rem;
-                    width: 42rem;
+                    right: -5rem;
+                    width: 34rem;
                     height: 25rem;
                 }
 
@@ -217,17 +217,17 @@
             right: -1rem;
             z-index: 10;
             
-            @media only screen and (min-width: $bp-land) {
-                width: 50rem;
-                right: -1rem;;
-                top: 5rem;
-            }
             @media only screen and (min-width: $bp-small) {
                 width: 50rem;
             }
-
+            
             @media only screen and (min-width: $bp-tab) {
                 width: 40rem;
+            }
+            @media only screen and (min-width: $bp-land) {
+                width: 38rem;
+                right: -1rem;;
+                top: 5rem;
             }
 
             @media only screen and (min-width: $bp-large) {
