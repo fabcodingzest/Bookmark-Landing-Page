@@ -21,13 +21,13 @@ h2{
     font-weight: 500;
     transition: .5s all ease;
 
-    @media only screen and (min-width: $bp-large) {
-        font-size: 3.8rem;
-    }
+    // @media only screen and (min-width: $bp-large) {
+    //     font-size: 3.8rem;
+    // }
 
-    @media only screen and (min-width: $bp-large) {
-        font-size: 5rem;
-    }
+    // @media only screen and (min-width: $bp-large) {
+    //     font-size: 5rem;
+    // }
 }
 
 h3{
@@ -44,7 +44,7 @@ p{
     color: hsl(229, 8%, 60%);
     //font-size: 1.5rem;
     margin-top: 2rem;
-    line-height: 1.6;
+    // line-height: 1.6;
     transition: all .2s ease-out;
 
 
