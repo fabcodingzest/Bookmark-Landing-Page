@@ -1,5 +1,5 @@
 .download{
-    margin: 3rem;
+    margin: 7rem;
     margin-bottom: 12rem;
 
     &__grid{
@@ -17,7 +17,7 @@
 
         @media only screen and (min-width: $bp-land) {
             flex-direction: row;
-            margin: 0;
+            margin: 0rem;
         }
 
     }

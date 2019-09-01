@@ -6,6 +6,8 @@ const faq = document.querySelectorAll(".faq__ques--ans");
 const faqPara = document.querySelectorAll(".faq__ques--para");
 const faqArrow = document.querySelectorAll(".faq-arrow");
 
+const removeNav = document.querySelectorAll(".header__links");
+
 const form = document.querySelector(".signup__input--btn");
 const formInput = document.querySelectorAll(".signup__input")[1];
 const formSpan = document.querySelector(".signup__invalid");
@@ -13,7 +15,14 @@ const formSpan = document.querySelector(".signup__invalid");
 menuOpen.addEventListener('click', function(){
     menuOpen.classList.toggle('active');
     mobileNav.classList.toggle('open');
+    for(let i = 0 ; i < removeNav.length ; i++ ){
+        removeNav[i].addEventListener('click', function(){
+            mobileNav.classList.remove('open');
+            menuOpen.classList.remove('active');
+        })
+    }
 });
+
 
 //Faq Answer Toggle
 for(let i = 0 ; i < faq.length ; i++ ){
@@ -78,4 +87,29 @@ for(let f = 0; f < features.length; f++){
     })
 }
 
+const featuresTab = document.querySelectorAll('.features__button');
+const fSpan = document.querySelectorAll('.f__span');
 
+
+for(let i = 0; i < featuresTab.length ; i++ ){
+    let click = false;
+
+    featuresTab[i].addEventListener('click', function(){
+        click = true;
+        if(click === true){
+            fSpan[i].classList.add('features__red');
+            if(fSpan[i] === fSpan[0]){
+                fSpan[1].classList.remove('features__red');
+                fSpan[2].classList.remove('features__red');
+                
+            } else if (fSpan[i] === fSpan[1]){
+                fSpan[0].classList.remove('features__red');
+                fSpan[2].classList.remove('features__red');
+            } else {
+                fSpan[0].classList.remove('features__red');
+                fSpan[1].classList.remove('features__red');
+            }
+
+        }
+    })
+}

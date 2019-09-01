@@ -12,22 +12,26 @@ html {
 
 body{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: 'Rubik', sans-serif;
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 h2{
+    font-size: 2.6rem;
     font-weight: 500;
     transition: .5s all ease;
 
-    // @media only screen and (min-width: $bp-large) {
-    //     font-size: 3.8rem;
-    // }
+    @media only screen and (min-width: $bp-large) {
+        font-size: 3.8rem;
+    }
 
-    // @media only screen and (min-width: $bp-large) {
-    //     font-size: 5rem;
-    // }
+    @media only screen and (min-width: $bp-large) {
+        font-size: 3.5rem;
+    }
+    @media only screen and (min-width: $bp-huge) {
+        font-size: 4.5rem;
+    }
 }
 
 h3{
@@ -42,14 +46,14 @@ h5{
 
 p{
     color: hsl(229, 8%, 60%);
-    //font-size: 1.5rem;
+    font-size: 1.5rem;
     margin-top: 2rem;
-    // line-height: 1.6;
+    line-height: 1.6;
     transition: all .2s ease-out;
 
 
     @media only screen and (min-width: $bp-small) {
-        //font-size: 1.5rem;
+        font-size: 1.5rem;
         max-width: 44rem;
     }
 }
