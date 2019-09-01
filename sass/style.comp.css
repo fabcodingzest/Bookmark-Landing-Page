@@ -520,6 +520,11 @@ button {
     color: #fff;
     cursor: pointer;
     align-self: center; }
+    .features__info:hover, .features__info:active {
+      background-color: #fff;
+      border: .2rem solid #5267df;
+      border-radius: .5rem;
+      color: #5267df; }
     @media only screen and (min-width: 47em) {
       .features__info {
         align-self: flex-end; } }

@@ -219,6 +219,14 @@
             cursor: pointer;
             align-self: center;
 
+            &:hover,
+            &:active{
+                background-color: #fff;
+                border: .2rem solid #5267df;
+                border-radius: .5rem;
+                color: #5267df;
+            }
+
             @media only screen and (min-width: $bp-tab) {
                 align-self: flex-end;
             }
