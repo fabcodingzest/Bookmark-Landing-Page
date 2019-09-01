@@ -10,16 +10,17 @@
         @media only screen and (min-width: $bp-small) {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            margin-top: 12rem;
         }
 
         @media only screen and (min-width: $bp-tab) {
-            margin-top: 9rem;
+            margin-top: 15rem;
             align-items: start;
         }
 
         @media only screen and (min-width: $bp-large) {
-            margin-top: -8rem;
+            margin-top: -6rem;
             
         }
     }
@@ -43,7 +44,7 @@
         &--content{
             display: none;
 
-            @media only screen and (min-width: $bp-land) {
+            @media only screen and (min-width: $bp-tab) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -54,8 +55,12 @@
         }
 
         &--content a, &--content a:link, &--content a:visited{
+
+            @media only screen and (min-width: $bp-tab) {
+                font-size: 1.4rem;
+            }
             
-            @media only screen and (min-width: $bp-land) {
+            @media only screen and (min-width: $bp-tab) {
                 text-decoration: none;
                 color: black;
                 margin-right: 5rem;
@@ -98,7 +103,7 @@
             top: 0rem;
             z-index: 200000;
 
-            @media only screen and (min-width: $bp-land) {
+            @media only screen and (min-width: $bp-tab) {
                 display: none;
             }
 
@@ -137,7 +142,7 @@
             border-radius: 20rem;
             z-index: 20000;
 
-            @media only screen and (min-width: $bp-land) {
+            @media only screen and (min-width: $bp-tab) {
                 display: none;
             }
 
@@ -165,7 +170,12 @@
         grid-template-rows: 38rem max-content;
         position: relative;
         grid-gap: 2rem;
-
+        
+        @media only screen and (min-width: $bp-small) {
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 0rem;
+            height: 32rem;
+        }
         @media only screen and (min-width: $bp-large) {
             grid-template-columns: repeat(2,1fr);
             text-align: start;
@@ -173,10 +183,6 @@
             margin: 10rem 0;
         }
 
-        @media only screen and (min-width: $bp-tab) {
-            grid-template-columns: repeat(2,1fr);
-            grid-gap: 0rem;
-        }
 
         
 
@@ -195,14 +201,13 @@
                 border-bottom-left-radius: 15rem;
                 position: absolute;
                 top: 14rem;
-                right: -3rem;
+                right: -4rem;
                 z-index: 1;
 
                 
                 @media only screen and (min-width: $bp-small) {
-                    width: 39rem;
-                    height: 28rem;
-                    top: 12rem;
+                    width: 28rem;;
+                    height: 16rem;
                 }
                 
                 @media only screen and (min-width: $bp-tab) {
@@ -238,9 +243,7 @@
             z-index: 10;
             
             @media only screen and (min-width: $bp-small) {
-                width: 45rem;
-                right: 4rem;
-                top: 6rem;
+                width: 28rem;
 
             }
             
@@ -267,18 +270,20 @@
         &--2{
             margin: 1.2rem;
             text-align: center;
+            margin-top: -4rem;
+            
+
+
             @media only screen and (min-width: $bp-land) {
                 grid-row: 1/2;
                 text-align: start;
             }
 
-            @media only screen and (min-width: $bp-tab) {
+            @media only screen and (min-width: $bp-small) {
                 text-align: start;
-            }
-
-            @media only screen and (min-width: $bp-tab) {
                 grid-row: 1/1;
             }
+
         }
 
 
@@ -294,6 +299,10 @@
             box-shadow: 0 .3rem .8rem rgb(182, 182, 182);
             color: hsl(220, 2%, 34%);
             cursor: pointer;
+
+            @media only screen and (min-width: $bp-small) {
+                font-size: 1rem;
+            }
 
             &:hover,
             &:active{

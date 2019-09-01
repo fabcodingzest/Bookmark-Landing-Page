@@ -23,8 +23,8 @@ h2{
     font-weight: 500;
     transition: .5s all ease;
 
-    @media only screen and (min-width: $bp-large) {
-        font-size: 3.8rem;
+    @media only screen and (min-width: $bp-small) {
+        font-size: 2rem;
     }
 
     @media only screen and (min-width: $bp-large) {
@@ -54,8 +54,14 @@ p{
 
 
     @media only screen and (min-width: $bp-small) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         max-width: 44rem;
+    }
+    @media only screen and (min-width: $bp-tab) {
+        font-size: 1.5rem;
+    }
+    @media only screen and (min-width: $bp-huge) {
+        font-size: 1.8rem;
     }
 }
 

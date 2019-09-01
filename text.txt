@@ -112,28 +112,74 @@
 
   Features
   Pricing
-  Contact
+  Contact Us
 
 
 
 
-  // 31 August 2019
 
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
-  //600px -> header img & Bg Big - DONE
-             + para width limit  - DONE
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
 
-  //768px -> header & feature grid - DONE
-             footer fix - DONE
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
 
-  //900px -> Download flex row & translate, - DONE
-             feature head flex row + font small, - DONE
-             + Mobile nav display none, -DONE
-              desktop nav - DONE
-              footer -DONE
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
 
-  //1200px - DONE
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
 
-  //1600px + - bg size increase + font size increase
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
 
-  // JAVASCRIPT feature span 
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
+}

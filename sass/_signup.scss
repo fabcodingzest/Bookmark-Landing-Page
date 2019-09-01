@@ -23,8 +23,9 @@
         border-radius: .6rem;
         border: none;
 
-        @media only screen and (min-width: $bp-tab) {
+        @media only screen and (min-width: $bp-small) {
             max-width: 35rem;
+            margin-left: -1rem;
         }
         
         &--btn{
@@ -46,10 +47,10 @@
                 color: #ff6161;
             }
 
-            @media only screen and (min-width: $bp-tab) {
+            @media only screen and (min-width: $bp-small) {
                 padding: 1.6rem;
                 max-width: 15rem;
-                margin-left: 3rem;
+                margin-left: rem;
             }
         }
     }
@@ -57,7 +58,7 @@
     &__form{
         position: relative;
 
-        @media only screen and (min-width: $bp-tab) {
+        @media only screen and (min-width: $bp-small) {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -79,24 +80,6 @@
             visibility: visible;
         }
 
-    // &__req:before{
-    //     content: 'This does not look like an email';
-    //     display: block;
-    //     height: inherit;
-    //     background-color: red;
-    //     position: absolute;
-    //     text-align: center;
-    //     padding: .2rem 1.3rem;
-    //     border-bottom-left-radius: .6rem;
-    //     border-bottom-right-radius: .6rem;
-    //     //width: 100%;
-
-    //     @media only screen and (min-width: $bp-large) {
-    //         max-width: 35rem;
-    //     }
-
-    // }
-
 
     &__email{
         border: 2px solid red;
@@ -112,6 +95,7 @@
 
         &::placeholder{
             color: grey;
+            
         }
 
         &.signup__email::placeholder{

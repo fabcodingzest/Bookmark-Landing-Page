@@ -76,17 +76,17 @@ let imgArr = [image1, image2, image3];
 let text1 = `<h2>Bookmark in one click</h2>
             <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
             gives you complete control over how you manage your favourite sites.</p>
-            <button class="faq__ques--btn button">More Info</button>`;
+            <button class="features__info">More Info</button>`;
 
 let text2 = `<h2>Intelligent search</h2>
             <p>Our powerful search feature will help you find saved sites in no time at all. 
             No need to trawl through all of your bookmarks.</p>
-            <button class="faq__ques--btn button">More Info</button>`;
+            <button class="features__info">More Info</button>`;
 
 let text3 = `<h2>Share your bookmarks</h2>
             <p>Easily share your bookmarks and collections with others. Create a shareable 
             link that you can send at the click of a button.</p>
-            <button class="faq__ques--btn button">More Info</button>`;
+            <button class="features__info">More Info</button>`;
 
 let textArr = [text1, text2, text3]
 

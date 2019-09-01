@@ -2,6 +2,15 @@
     margin: 7rem;
     margin-bottom: 12rem;
 
+    @media only screen and (min-width: $bp-small) {
+        margin-top: 0rem;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        margin-top: 14rem;
+    }
+
+
     &__grid{
         display: flex;
         flex-direction: column;

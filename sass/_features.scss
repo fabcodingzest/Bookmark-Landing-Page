@@ -1,20 +1,27 @@
 .features{
-    margin: 3rem 3rem;
+    margin: 5rem 3rem;
     text-align: center;
 
-    @media only screen and (min-width: $bp-large) {
-        text-align: start;
+    @media only screen and (min-width: $bp-small) {
+        margin: 0 3rem;
     }
 
+    
+    @media only screen and (min-width: $bp-tab) {
+        margin: 0rem 3rem;
+    }
     @media only screen and (min-width: $bp-large) {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: start;
         
     }
 
-    @media only screen and (min-width: $bp-tab) {
-        margin: 0rem 3rem;
+    @media only screen and (min-width: $bp-huge) {
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        
     }
 
     &__p{
@@ -48,7 +55,7 @@
             text-align: center;
         }
 
-        @media only screen and (min-width: $bp-tab) {
+        @media only screen and (min-width: $bp-small) {
             display: flex;
         }
     }
@@ -62,15 +69,24 @@
         cursor: pointer;
         outline: none;
 
+        @media only screen and (min-width: $bp-small) {
+            font-size: 1rem;
+            padding: 1.6rem 4rem;
+            
+        }
+        @media only screen and (min-width: $bp-tab) {
+            font-size: 1.4rem;
+        }
         @media only screen and (min-width: $bp-large) {
             border-top: none;
             font-size: 1.4rem;
             padding: 1.8rem 5rem;
         }
 
-        @media only screen and (min-width: $bp-tab) {
-            font-size: 1.4rem;
+        @media only screen and (min-width: $bp-huge) {
+            font-size: 1.8rem;
         }
+
 
         &:hover{
             color: #ff6161;
@@ -79,7 +95,7 @@
         &:first-of-type{
             border-top: .1rem solid rgb(201, 201, 201);
 
-            @media only screen and (min-width: $bp-tab) {
+            @media only screen and (min-width: $bp-small) {
                 border-top: none;
             }
 
@@ -91,25 +107,27 @@
         display: grid;
         grid-template-rows: 35rem max-content;
 
+        
+        @media only screen and (min-width: $bp-small) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 6rem;
+            height: 32rem;
+        }
+        
+        @media only screen and (min-width: $bp-tab) {
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 0;
+            
+        }
+        
+        @media only screen and (min-width: $bp-land) {
+            grid-gap: 3rem
+        }
         @media only screen and (min-width: $bp-large) {
             grid-template-columns: repeat(2,1fr);
             align-items: center;
             margin: 2rem 0;
             grid-gap: 5rem;
-        }
-
-        @media only screen and (min-width: $bp-small) {
-            grid-gap: 6rem;
-        }
-
-        @media only screen and (min-width: $bp-tab) {
-            grid-template-columns: repeat(2,1fr);
-            grid-gap: 0;
-
-        }
-
-        @media only screen and (min-width: $bp-land) {
-            grid-gap: 3rem
         }
     }
 
@@ -133,8 +151,8 @@
             
             
             @media only screen and (min-width: $bp-small) {
-                height: 30rem;
-                width: 44rem;
+                height: 18rem;
+                width: 30rem;
                 top: 8rem;
             }
             
@@ -169,16 +187,16 @@
             margin-top: 0rem;
             position: absolute;
             top: 4rem;
-            left: 6rem;
+            left: 4rem;
             z-index: 10;
             transition: .5s all ease;
 
             
             @media only screen and (min-width: $bp-small) {
-                width: 40rem;
+                width: 26rem;
                 height: auto;
                 top: 4rem;
-                left: 5rem;
+                left: 3rem;
             }
             
             @media only screen and (min-width: $bp-tab) {
@@ -227,8 +245,9 @@
                 color: #5267df;
             }
 
-            @media only screen and (min-width: $bp-tab) {
+            @media only screen and (min-width: $bp-small) {
                 align-self: flex-end;
+                padding: 1.2rem 1.8rem;;
             }
         
         }
@@ -240,6 +259,12 @@
         align-items: center;
         text-align: center;
         margin-right: 2rem;
+
+        @media only screen and (min-width: $bp-small) {
+            align-items: flex-end;
+            text-align: end;
+            justify-content: center;
+        }
 
         @media only screen and (min-width: $bp-land) {
             align-items: flex-end;
@@ -265,7 +290,10 @@
         top: 5.1rem;
         left: 30%;
         transition: width .5s ease-out;
-         
+        
+        @media only screen and (min-width: $bp-small) {
+            top: 4rem;
+        }
 
         @media only screen and (min-width: $bp-tab) {
             top: 4.5rem;
@@ -281,6 +309,11 @@
         @media only screen and (min-width: $bp-large) {
             top: 5rem;
         }
+
+        @media only screen and (min-width: $bp-huge) {
+            top: 5.4rem;
+        }
+
     }
 
 }
