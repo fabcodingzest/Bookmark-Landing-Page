@@ -850,10 +850,14 @@ button {
   .footer__credit {
     text-align: center;
     font-size: 1.4rem;
-    margin-top: 4rem; }
+    margin-top: 0rem; }
     @media only screen and (min-width: 37.5em) {
       .footer__credit {
-        margin-top: 2rem; } }
+        margin-top: 0rem;
+        font-size: 1.2rem; } }
+    @media only screen and (min-width: 47em) {
+      .footer__credit {
+        font-size: 1.6rem; } }
   .footer__flex {
     display: flex;
     flex-direction: column;
@@ -862,27 +866,27 @@ button {
     margin: 1rem 8rem; }
     .footer__flex a {
       margin-bottom: 2.5rem; }
-      @media only screen and (min-width: 75em) {
-        .footer__flex a {
-          margin-right: 5rem; } }
       @media only screen and (min-width: 37.5em) {
         .footer__flex a {
-          margin-bottom: 0; } }
-    @media only screen and (min-width: 47em) {
-      .footer__flex {
-        flex-direction: row;
-        justify-content: start; } }
+          margin-bottom: 2rem; } }
+      @media only screen and (min-width: 47em) {
+        .footer__flex a {
+          margin-right: 5rem; } }
     @media only screen and (min-width: 37.5em) {
       .footer__flex {
         flex-direction: row;
         justify-content: space-between;
         margin: 0;
         width: 100%; } }
+    @media only screen and (min-width: 47em) {
+      .footer__flex {
+        margin-right: 5rem;
+        justify-content: start; } }
     .footer__flex svg,
     .footer__flex h5,
     .footer__flex div {
       margin: 1.5rem; }
-      @media only screen and (min-width: 47em) {
+      @media only screen and (min-width: 37.5em) {
         .footer__flex svg,
         .footer__flex h5,
         .footer__flex div {
@@ -899,7 +903,7 @@ button {
           margin-left: 0; } }
       .footer__flex--social a:hover svg path {
         fill: #ff8e8e; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 47em) {
       .footer__flex div {
         align-self: flex-end;
         margin-left: auto; } }
