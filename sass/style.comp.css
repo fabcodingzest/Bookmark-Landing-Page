@@ -204,7 +204,7 @@ button {
       border-bottom-left-radius: 15rem;
       position: absolute;
       top: 14rem;
-      right: -4rem;
+      right: -3rem;
       z-index: 1; }
       @media only screen and (min-width: 37.5em) {
         .header__grid--bg {
@@ -312,7 +312,7 @@ button {
     opacity: 0;
     visibility: hidden; }
     .header__mobile.open {
-      opacity: 0.8;
+      opacity: 0.9;
       visibility: visible;
       height: 100%; }
     .header__mobile--nav {

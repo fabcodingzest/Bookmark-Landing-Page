@@ -150,8 +150,7 @@
         }
 
         &__icon.active .header__menu{
-            background:rgb(0, 0, 0);
-            opacity: 0;
+            background:rgba(0, 0, 0, 0);
             
         }
         &__icon.active .header__menu:before{
@@ -351,7 +350,7 @@
         visibility: hidden;
 
         &.open{
-            opacity: 0.8;
+            opacity: 0.9;
             visibility: visible;
             height: 100%;
         }
