@@ -36,7 +36,7 @@ p {
 button {
   outline: none; }
 
-@media only screen and (min-width: 56.2em) {
+@media only screen and (min-width: 57em) {
   .container {
     margin: 6rem 2rem; } }
 
@@ -69,18 +69,18 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .header__nav {
         display: flex; } }
     .header__nav--content {
       display: none; }
-      @media only screen and (min-width: 56.2em) {
+      @media only screen and (min-width: 57em) {
         .header__nav--content {
           display: flex;
           justify-content: center;
           align-items: center;
           margin-right: 5rem; } }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .header__nav--content a, .header__nav--content a:link, .header__nav--content a:visited {
         text-decoration: none;
         color: black;
@@ -110,7 +110,7 @@ button {
     height: 3px;
     position: relative;
     z-index: 200000; }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .header__menu {
         display: none; } }
     .header__menu:before, .header__menu:after {
@@ -171,7 +171,7 @@ button {
         .header__grid--bg {
           width: 25rem;
           height: 18rem; } }
-      @media only screen and (min-width: 56.2em) {
+      @media only screen and (min-width: 57em) {
         .header__grid--bg {
           top: 12rem;
           right: -5rem;
@@ -200,7 +200,7 @@ button {
       @media only screen and (min-width: 47em) {
         .header__grid--illustration {
           width: 40rem; } }
-      @media only screen and (min-width: 56.2em) {
+      @media only screen and (min-width: 57em) {
         .header__grid--illustration {
           width: 38rem;
           right: -1rem;
@@ -216,7 +216,7 @@ button {
     .header__grid--2 {
       margin: 1.2rem;
       text-align: center; }
-      @media only screen and (min-width: 56.2em) {
+      @media only screen and (min-width: 57em) {
         .header__grid--2 {
           grid-row: 1/2;
           text-align: start; } }
@@ -475,7 +475,7 @@ button {
     @media only screen and (min-width: 47em) {
       .features__red {
         top: 4.5rem; } }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .features__red {
         width: 100%;
         left: 0;
@@ -497,7 +497,7 @@ button {
       .download__grid {
         flex-direction: row;
         margin: 8rem 0; } }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .download__grid {
         flex-direction: row;
         margin: 0; } }
@@ -508,7 +508,7 @@ button {
       align-items: center; } }
   .download__head {
     text-align: center; }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .download__head {
         margin-bottom: 4rem; } }
     @media only screen and (min-width: 75em) {
@@ -530,12 +530,12 @@ button {
     align-items: center;
     border-radius: 1.4rem;
     box-shadow: 0 0.5rem 1.4rem #e6e6e6; }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .download__card {
         margin-right: 4rem;
         min-width: 24rem;
         overflow-x: hidden; } }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .download__card:last-child {
         margin-right: 0; } }
     .download__card--dots {
@@ -543,7 +543,7 @@ button {
     .download__card--img {
       margin-bottom: 4rem;
       margin-top: 4rem; }
-      @media only screen and (min-width: 56.2em) {
+      @media only screen and (min-width: 57em) {
         .download__card--img {
           max-width: 24rem;
           margin-top: 1rem; } }
@@ -560,7 +560,7 @@ button {
       box-shadow: 0 0.3rem 0.8rem #b6b6b6;
       color: #fff;
       cursor: pointer; }
-      @media only screen and (min-width: 56.2em) {
+      @media only screen and (min-width: 57em) {
         .download__card--btn {
           margin: 1rem;
           margin-top: 1.5rem;
@@ -572,10 +572,10 @@ button {
         border: .2rem solid #5267df;
         border-radius: .5rem;
         color: #5267df; }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .download__card--1 {
         transform: translateY(-5rem); } }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .download__card--3 {
         transform: translateY(5rem); } }
 
@@ -597,7 +597,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    @media only screen and (min-width: 56.2em) {
+    @media only screen and (min-width: 57em) {
       .faq__ques {
         justify-content: center;
         width: 40%;
@@ -722,7 +722,7 @@ button {
   text-align: center;
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 56.2em) {
+  @media only screen and (min-width: 57em) {
     .footer {
       padding: 2rem 3rem; } }
   .footer__credit {
@@ -778,9 +778,6 @@ button {
       .footer__flex div {
         align-self: flex-end;
         margin-left: auto; } }
-  .footer p {
-    color: #fff;
-    font-size: 1.2rem; }
   .footer a:link,
   .footer a:visited {
     color: #fff;
