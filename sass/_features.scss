@@ -193,10 +193,12 @@
     }
 
     &__bookmark{
+        
 
         @media only screen and (min-width: $bp-tab) {
             align-self: center;
             text-align: start;
+            line-height: 1;
         }
     }
 
