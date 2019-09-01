@@ -121,7 +121,7 @@
             
     
             &:before{
-                top: -6px;;
+                top: -6px;
             }
     
             &:after{     
@@ -150,7 +150,8 @@
         }
 
         &__icon.active .header__menu{
-            background:rgba(0,0,0,0);
+            background:rgb(0, 0, 0);
+            opacity: 0;
             
         }
         &__icon.active .header__menu:before{
@@ -202,7 +203,7 @@
                 border-bottom-left-radius: 15rem;
                 position: absolute;
                 top: 14rem;
-                right: -4rem;
+                right: -3rem;
                 z-index: 1;
 
                 
