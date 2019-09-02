@@ -23,7 +23,7 @@
         border-radius: .6rem;
         border: none;
 
-        @media only screen and (min-width: $bp-tab) {
+        @media only screen and (min-width: $bp-small) {
             max-width: 35rem;
             margin-left: -1rem;
         }
@@ -33,6 +33,9 @@
             border-radius: .6rem;
             border: none;
             background-color: #ff6161;
+            border-radius: .6rem;
+            border: .2rem solid #ff6161;
+
             color: #fff;
             font-size: 1.6rem;
             font-weight: 500;
@@ -42,15 +45,12 @@
             &:hover,
             &:active{
                 background-color: #fff;
-                border: .2rem solid #ff6161;
-                border-radius: .6rem;
                 color: #ff6161;
             }
 
             @media only screen and (min-width: $bp-small) {
                 padding: 1.6rem;
                 max-width: 15rem;
-                margin-left: rem;
             }
         }
     }
@@ -79,7 +79,7 @@
             border-bottom-right-radius: .6rem;
             visibility: visible;
 
-            @media only screen and (min-width: $bp-tab) {
+            @media only screen and (min-width: $bp-small) {
                 margin-left: -.5rem;
             }
         }

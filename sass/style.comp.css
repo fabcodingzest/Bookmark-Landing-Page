@@ -127,7 +127,6 @@ button {
     cursor: pointer; }
     .header__btn:hover, .header__btn:active {
       background-color: #fff;
-      border-radius: .6rem;
       color: #ff6161; }
   .header__menu {
     display: inline-block;
@@ -273,12 +272,12 @@ button {
       border: none;
       margin-top: 3rem;
       padding: 1.2rem;
+      border: 0.2rem solid #9c9b9b;
       border-radius: .5rem;
       background-color: #f0f0f0;
       margin-right: .9rem;
       font-weight: 500;
       font-family: 'Rubik', sans-serif;
-      border: 0.2rem solid #9c9b9b;
       box-shadow: 0 0.3rem 0.8rem #b6b6b6;
       color: #555658;
       cursor: pointer; }
@@ -287,7 +286,6 @@ button {
           font-size: 1rem; } }
       .header__grid--button:hover, .header__grid--button:active {
         background-color: #fff;
-        border-radius: .6rem;
         color: grey; }
       .header__grid--buttonchrome {
         color: white;
@@ -295,7 +293,6 @@ button {
         border: .2rem solid #5267df; }
         .header__grid--buttonchrome:hover, .header__grid--buttonchrome:active {
           background-color: #fff;
-          border-radius: .6rem;
           color: #5267df; }
   .header__navbar--nav {
     display: flex;
@@ -538,19 +535,18 @@ button {
     border: none;
     margin-top: 3rem;
     padding: 1.2rem 3rem;
+    border: .2rem solid #5267df;
     border-radius: .5rem;
     background-color: #5368df;
     margin-right: .9rem;
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
     box-shadow: 0 0.3rem 0.8rem #b6b6b6;
-    border: .2rem solid #5267df;
     color: #fff;
     cursor: pointer;
     align-self: center; }
     .features__info:hover, .features__info:active {
       background-color: #fff;
-      border-radius: .5rem;
       color: #5267df; }
     @media only screen and (min-width: 37.5em) {
       .features__info {
@@ -560,8 +556,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-right: 2rem; }
+    text-align: center; }
     @media only screen and (min-width: 37.5em) {
       .features__bookmark {
         align-items: flex-end;
@@ -765,7 +760,6 @@ button {
       cursor: pointer; }
       .faq__ques--btn:hover, .faq__ques--btn:active {
         background-color: #fff;
-        border-radius: .5rem;
         color: #5267df; }
 
 .signup {
@@ -787,7 +781,7 @@ button {
     padding: 1.6rem;
     border-radius: .6rem;
     border: none; }
-    @media only screen and (min-width: 47em) {
+    @media only screen and (min-width: 37.5em) {
       .signup__input {
         max-width: 35rem;
         margin-left: -1rem; } }
@@ -796,6 +790,8 @@ button {
       border-radius: .6rem;
       border: none;
       background-color: #ff6161;
+      border-radius: .6rem;
+      border: .2rem solid #ff6161;
       color: #fff;
       font-size: 1.6rem;
       font-weight: 500;
@@ -803,14 +799,11 @@ button {
       cursor: pointer; }
       .signup__input--btn:hover, .signup__input--btn:active {
         background-color: #fff;
-        border: .2rem solid #ff6161;
-        border-radius: .6rem;
         color: #ff6161; }
       @media only screen and (min-width: 37.5em) {
         .signup__input--btn {
           padding: 1.6rem;
-          max-width: 15rem;
-          margin-left: rem; } }
+          max-width: 15rem; } }
   .signup__form {
     position: relative; }
     @media only screen and (min-width: 37.5em) {
@@ -828,7 +821,7 @@ button {
     border-bottom-left-radius: .6rem;
     border-bottom-right-radius: .6rem;
     visibility: visible; }
-    @media only screen and (min-width: 47em) {
+    @media only screen and (min-width: 37.5em) {
       .signup__req {
         margin-left: -.5rem; } }
   .signup__email {
@@ -855,12 +848,11 @@ button {
       padding: 2rem 3rem; } }
   .footer__credit {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 0rem; }
     @media only screen and (min-width: 37.5em) {
       .footer__credit {
-        margin-top: 0rem;
-        font-size: 1.2rem; } }
+        margin-top: 0rem; } }
     @media only screen and (min-width: 47em) {
       .footer__credit {
         font-size: 1.6rem; } }
@@ -874,10 +866,12 @@ button {
       margin-bottom: 2.5rem; }
       @media only screen and (min-width: 37.5em) {
         .footer__flex a {
-          margin-bottom: 2rem; } }
+          margin-bottom: 2rem;
+          font-size: 1.4rem; } }
       @media only screen and (min-width: 47em) {
         .footer__flex a {
-          margin-right: 5rem; } }
+          margin-right: 5rem;
+          font-size: 1.6rem; } }
     @media only screen and (min-width: 37.5em) {
       .footer__flex {
         flex-direction: row;

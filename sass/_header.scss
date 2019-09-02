@@ -89,7 +89,6 @@
         &:hover,
         &:active{
             background-color: #fff;
-            border-radius: .6rem;
             color: #ff6161;
         }
 
@@ -293,12 +292,12 @@
             border: none;
             margin-top: 3rem;
             padding: 1.2rem;
+            border: .2rem solid rgb(156, 155, 155);
             border-radius: .5rem;
             background-color: rgb(240, 240, 240);
             margin-right: .9rem;
             font-weight: 500;
             font-family: 'Rubik', sans-serif;
-            border: .2rem solid rgb(156, 155, 155);
             box-shadow: 0 .3rem .8rem rgb(182, 182, 182);
             color: hsl(220, 2%, 34%);
             cursor: pointer;
@@ -310,7 +309,6 @@
             &:hover,
             &:active{
                 background-color: #fff;
-                border-radius: .6rem;
                 color: grey;
             }
             
@@ -322,7 +320,6 @@
                 &:hover,
                 &:active{
                 background-color: #fff;
-                border-radius: .6rem;
                 color: #5267df;
             }
             }

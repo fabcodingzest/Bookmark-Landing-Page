@@ -227,13 +227,13 @@
             border: none;
             margin-top: 3rem;
             padding: 1.2rem 3rem;
+            border: .2rem solid #5267df;
             border-radius: .5rem;
             background-color: #5368df;
             margin-right: .9rem;
             font-weight: 500;
             font-family: 'Rubik', sans-serif;
             box-shadow: 0 0.3rem 0.8rem #b6b6b6;
-            border: .2rem solid #5267df;
 
             color: #fff;
             cursor: pointer;
@@ -242,7 +242,6 @@
             &:hover,
             &:active{
                 background-color: #fff;
-                border-radius: .5rem;
                 color: #5267df;
             }
 
@@ -259,7 +258,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-right: 2rem;
+        
 
         @media only screen and (min-width: $bp-small) {
             align-items: flex-end;
