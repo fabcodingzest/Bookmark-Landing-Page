@@ -102,7 +102,7 @@ button {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 5rem; } }
+          margin-right: 0rem; } }
     @media only screen and (min-width: 47em) {
       .header__nav--content a, .header__nav--content a:link, .header__nav--content a:visited {
         font-size: 1.4rem; } }
@@ -114,10 +114,11 @@ button {
         .header__nav--content a:hover, .header__nav--content a:link:hover, .header__nav--content a:visited:hover {
           color: #ff6161; } }
   .header__btn {
-    padding: 1rem 4rem;
+    padding: .6rem 3rem;
     border-radius: .6rem;
     border: none;
     background-color: #ff6161;
+    border: .4rem solid #ff6161;
     width: 100%;
     color: #fff;
     font-size: 1.6rem;
@@ -126,7 +127,6 @@ button {
     cursor: pointer; }
     .header__btn:hover, .header__btn:active {
       background-color: #fff;
-      border: .4rem solid #ff6161;
       border-radius: .6rem;
       color: #ff6161; }
   .header__menu {
@@ -278,6 +278,7 @@ button {
       margin-right: .9rem;
       font-weight: 500;
       font-family: 'Rubik', sans-serif;
+      border: 0.2rem solid #9c9b9b;
       box-shadow: 0 0.3rem 0.8rem #b6b6b6;
       color: #555658;
       cursor: pointer; }
@@ -286,22 +287,21 @@ button {
           font-size: 1rem; } }
       .header__grid--button:hover, .header__grid--button:active {
         background-color: #fff;
-        border: 0.2rem solid #9c9b9b;
         border-radius: .6rem;
         color: grey; }
       .header__grid--buttonchrome {
         color: white;
-        background-color: #5267df; }
+        background-color: #5267df;
+        border: .2rem solid #5267df; }
         .header__grid--buttonchrome:hover, .header__grid--buttonchrome:active {
           background-color: #fff;
-          border: .2rem solid #5267df;
           border-radius: .6rem;
           color: #5267df; }
   .header__navbar--nav {
     display: flex;
     justify-content: space-between; }
   .header__mobile {
-    background-color: #2a346e;
+    background-color: #5162c2;
     width: 100%;
     height: 0%;
     position: fixed;
@@ -313,7 +313,7 @@ button {
     opacity: 0;
     visibility: hidden; }
     .header__mobile.open {
-      opacity: 0.9;
+      opacity: .98;
       visibility: visible;
       height: 100%; }
     .header__mobile--nav {
@@ -537,25 +537,25 @@ button {
   .features__info {
     border: none;
     margin-top: 3rem;
-    padding: 1.6rem 3rem;
+    padding: 1.2rem 3rem;
     border-radius: .5rem;
     background-color: #5368df;
     margin-right: .9rem;
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
     box-shadow: 0 0.3rem 0.8rem #b6b6b6;
+    border: .2rem solid #5267df;
     color: #fff;
     cursor: pointer;
     align-self: center; }
     .features__info:hover, .features__info:active {
       background-color: #fff;
-      border: .2rem solid #5267df;
       border-radius: .5rem;
       color: #5267df; }
     @media only screen and (min-width: 37.5em) {
       .features__info {
         align-self: flex-end;
-        padding: 1.2rem 1.8rem; } }
+        padding: 1rem 1.8rem; } }
   .features__bookmark {
     display: flex;
     flex-direction: column;
@@ -680,6 +680,7 @@ button {
       padding: 1.6rem 3.5rem;
       border-radius: .5rem;
       background-color: #5368df;
+      border: .2rem solid #5267df;
       margin-right: .9rem;
       font-weight: 500;
       font-size: 1.4rem;
@@ -696,7 +697,6 @@ button {
           font-size: 1.2rem; } }
       .download__card--btn:hover, .download__card--btn:active {
         background-color: #fff;
-        border: .2rem solid #5267df;
         border-radius: .5rem;
         color: #5267df; }
     @media only screen and (min-width: 57em) {
@@ -755,6 +755,7 @@ button {
       padding: 1.6rem 3rem;
       border-radius: .5rem;
       background-color: #5368df;
+      border: .2rem solid #5267df;
       margin-right: .9rem;
       font-weight: 500;
       font-family: 'Rubik', sans-serif;
@@ -764,7 +765,6 @@ button {
       cursor: pointer; }
       .faq__ques--btn:hover, .faq__ques--btn:active {
         background-color: #fff;
-        border: .2rem solid #5267df;
         border-radius: .5rem;
         color: #5267df; }
 
@@ -787,7 +787,7 @@ button {
     padding: 1.6rem;
     border-radius: .6rem;
     border: none; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 47em) {
       .signup__input {
         max-width: 35rem;
         margin-left: -1rem; } }
@@ -828,6 +828,9 @@ button {
     border-bottom-left-radius: .6rem;
     border-bottom-right-radius: .6rem;
     visibility: visible; }
+    @media only screen and (min-width: 47em) {
+      .signup__req {
+        margin-left: -.5rem; } }
   .signup__email {
     border: 2px solid red;
     border-bottom-left-radius: 0;
