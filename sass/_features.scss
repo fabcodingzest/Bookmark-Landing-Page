@@ -8,7 +8,7 @@
 
     
     @media only screen and (min-width: $bp-tab) {
-        margin: 0rem 3rem;
+        margin: 7rem 3rem;
     }
     @media only screen and (min-width: $bp-large) {
         display: flex;
@@ -206,6 +206,7 @@
 
             @media only screen and (min-width: $bp-land) {
                 width: 32rem;
+                left: 8rem;
                 
             }
             @media only screen and (min-width: $bp-large) {

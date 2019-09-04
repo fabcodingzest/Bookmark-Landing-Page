@@ -87,7 +87,11 @@ button {
     width: 14.5rem;
     height: auto;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 1.5rem; }
+    @media only screen and (min-width: 47em) {
+      .header__logo {
+        margin-top: 0; } }
   .header__nav {
     display: flex;
     justify-content: space-between;
@@ -372,7 +376,7 @@ button {
       margin: 0 3rem; } }
   @media only screen and (min-width: 47em) {
     .features {
-      margin: 0rem 3rem; } }
+      margin: 7rem 3rem; } }
   @media only screen and (min-width: 75em) {
     .features {
       display: flex;
@@ -520,7 +524,8 @@ button {
           width: 28rem; } }
       @media only screen and (min-width: 57em) {
         .features__illustration--img {
-          width: 32rem; } }
+          width: 32rem;
+          left: 8rem; } }
       @media only screen and (min-width: 75em) {
         .features__illustration--img {
           width: 40rem;

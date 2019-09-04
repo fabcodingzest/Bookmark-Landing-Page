@@ -30,6 +30,11 @@
         height: auto;
         display: flex;
         align-items: center;
+        margin-top: 1.5rem;
+
+        @media only screen and (min-width: $bp-tab) {
+            margin-top: 0;
+        }
     }
 
     &__nav{
