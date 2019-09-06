@@ -46,6 +46,10 @@
             display: flex;
         }
 
+        &--links{
+            text-transform: uppercase;
+        }
+
         &--content{
             display: none;
 
@@ -237,7 +241,7 @@
                     width: 54rem;
                     height: 38rem;  
                 }
-               
+
         }
 
         &--illustration{
@@ -271,6 +275,7 @@
             @media only screen and (min-width: $bp-huge) {
                 width: 60rem;
             }
+
         }
 
         &--2{
@@ -414,6 +419,7 @@
         margin: 1rem;
         border-bottom: 2px solid #8388a8ec;
         padding: 1rem;
+        text-transform: uppercase;
 
     }
     
